@@ -31,7 +31,7 @@ const Experiences = [
     {
         duration: "2022 SEP - 2022 DEC",
         imgSrc: './images/UNB_Logo.png',
-        alt: 'UNB Logo',
+        imgAlt: 'UNB Logo',
         position: 'Teaching Assistant',
         location: 'Faculty of Engineering',
         desc: "In my previous position, I assisted students by grading their assignments, responding to their questions and needs, and providing extra help during office hours. I also worked in the lab, troubleshooting any errors that arose during sessions and ensuring that marking was completed promptly. Through this role, I honed my communication skills and deepened my knowledge of Python. \n\n \
@@ -47,7 +47,7 @@ const Experiences = [
     {
         duration: "2021 MAY - 2022 DEC",
         imgSrc: './images/UNB_Logo.png',
-        alt: 'UNB Logo',
+        imgAlt: 'UNB Logo',
         position: 'Research Assistant',
         location: 'Department of Chemistry',
         desc: "My responsibilities in the Department of Chemistry include learning how to use a new simulation software called COMSOL, which stands for 'Multiphysics Simulation Software.' \n\n \
@@ -66,7 +66,7 @@ const Experiences = [
     {
         duration: "2020 JAN - 2020 APR",
         imgSrc: './images/UNB_Logo.png',
-        alt: 'UNB Logo',
+        imgAlt: 'UNB Logo',
         position: 'Student Consultant',
         location: 'Information Technology Services',
         desc: "As part of the ITS team, my role involves a range of tasks and duties to ensure the smooth operation of various computer systems. One of my main responsibilities is to maintain and troubleshoot lab printers, ensuring that they are functioning correctly at all times. \
@@ -83,7 +83,7 @@ const Experiences = [
     {
         duration: "2019 SEP - 2020 SEP",
         imgSrc: './images/UNB_Logo.png',
-        alt: 'UNB Logo',
+        imgAlt: 'UNB Logo',
         position: 'Residence Assistant',
         location: 'Residence Life',
         desc: "As a Residence Assistant at UNB, my primary responsibility is to provide support and guidance to students living in residence. I am responsible for creating a safe, inclusive and engaging community within the residence hall, while also promoting academic success and personal growth. \n\n \
@@ -104,7 +104,7 @@ const Experiences = [
     {
         duration: "SUMMER 2018, 2019",
         imgSrc: './images/Camp_Logo.png',
-        alt: 'Camp Rotary Logo',
+        imgAlt: 'Camp Rotary Logo',
         position: 'Camp Counselor',
         location: 'Camp Rotary',
         desc: "As a counselor, I was responsible for supervising campers for a seven-day, six-night session that lasted for eight weeks throughout the summer. \n\n \

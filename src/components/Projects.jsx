@@ -1,6 +1,7 @@
 import SectionTitle from "./SubComponents/SectionTitle"
 import MyProjects from "../../public/data/MyProjects"
 import UnderConstruction from "./SubComponents/UnderConstruction"
+import Image from "next/image"
 
 export default function Projects() {
 
@@ -241,7 +242,13 @@ export default function Projects() {
                         lg:w-8/12
                         '>
 
-                    <img src={STS_Project.imgSrc}
+                    <Image
+                        src={STS_Project.imgSrc}
+                        alt={STS_Project.imgAlt}
+                        width={0}
+                        height={0}
+                        priority
+                        unoptimized
                         className='
                                 glass-effect
                                 rounded-40
@@ -317,8 +324,13 @@ export default function Projects() {
 
                         lg:w-8/12
                         '>
-                    <img
+                    <Image
+                        height={0}
+                        width={0}
+                        unoptimized
+                        priority
                         src={AM_Project.imgSrc}
+                        alt={AM_Project.imgAlt}
                         className='
                                 glass-effect
                                 rounded-40
@@ -362,7 +374,6 @@ export default function Projects() {
                     flex-col
                     items-center
 
-
                     md:-top-[400px]
 
                     lg:-top-[100px]
@@ -392,8 +403,13 @@ export default function Projects() {
 
                         lg:w-10/12
                         '>
-                    <img
+                    <Image
+                        width={500}
+                        height={500}
+                        unoptimized
+                        priority
                         src={WB_Project.imgSrc}
+                        alt={WB_Project.imgAlt}
                         className='
                                 glass-effect
                                 rounded-40

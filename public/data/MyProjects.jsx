@@ -13,6 +13,7 @@ const MyProjects = {
 
         Subsequently, I was hired as a software developer by the same professor to develop a similar tool on a department-wide level rather than just for the professor alone.`,
         imgSrc: '/images/STS.png',
+        imgAlt: 'Student Tracking System Banner',
         buttons: [
             {
                 bn: "Github",
@@ -38,6 +39,7 @@ const MyProjects = {
         
         We also introduced some randomness in the decision-making process to avoid repeating patterns. You can also find a short interview on our project on <a href='https://www.cbc.ca/news/canada/new-brunswick/unb-engineering-design-symposium-1.6411721' target='_blank'>CBC News</a>.`,
         imgSrc: '/images/SDP.jpg',
+        imgAlt: 'Automated Musician Poster',
         buttons: [
             {
                 bn: "Github",
@@ -60,6 +62,7 @@ const MyProjects = {
 
     WB: {
         title: 'Portfolio Website',
+        imgAlt: 'Elliot Logo',
         desc: `After successfully building my personal portfolio website using React, I decided to challenge myself further by creating another portfolio website using NextJS. The goal was to utilize the knowledge I gained from my previous project and explore the capabilities of NextJS. However, this time, I opted to use a different CSS framework called TailwindCSS to style the website components.
 
         By using TailwindCSS, I was able to quickly design the website by utilizing pre-defined CSS classes to style various elements on the webpage. This streamlined my development process and allowed me to focus on enhancing the functionality of the website.

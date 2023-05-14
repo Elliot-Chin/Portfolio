@@ -2,6 +2,7 @@ import { VerticalTimelineElement } from "react-vertical-timeline-component"
 import { AwesomeButton } from "react-awesome-button"
 import { FcBriefcase } from "react-icons/fc"
 import { useState } from "react"
+import Image from "next/image"
 
 export default function VTElement({ duration, position, location, skills, desc, buttons, buttonFuncs, imgSrc, imgAlt }) {
 
@@ -58,15 +59,19 @@ export default function VTElement({ duration, position, location, skills, desc, 
                     >
                         {duration}
                     </span>
-                    <img
+                    <Image
+                        width={0}
+                        height={0}
+                        unoptimized
+                        priority
                         className="
-                    mx-auto
-                    w-1/2
+                        mx-auto
+                        w-1/2
 
-                    md:w-2/3
+                        md:w-2/3
 
-                    lg:w-8/12
-                    "
+                        lg:w-8/12
+                        "
                         src={imgSrc}
                         alt={imgAlt}
                     />
