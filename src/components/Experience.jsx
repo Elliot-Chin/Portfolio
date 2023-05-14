@@ -3,7 +3,6 @@ import { VerticalTimeline } from "react-vertical-timeline-component"
 import SectionTitle from "./SubComponents/SectionTitle"
 import VTElement from "./SubComponents/VTElement"
 import Experiences from "../../public/data/MyExperiences"
-import { isMobile } from "react-device-detect"
 
 
 export default function Experience() {
@@ -76,7 +75,7 @@ export default function Experience() {
             >
                 <VerticalTimeline
                     lineColor="#6c6c6c"
-                    animate={!isMobile}
+                    animate={false}
                 >
 
                     {
