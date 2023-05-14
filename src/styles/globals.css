@@ -1,27 +1,35 @@
+/* Tailwind imports */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
+  font-family: 'Hind Madurai';
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+::-webkit-scrollbar {
+    display: none !important;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+a {
+  color: inherit;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.shadowed-text {
+  text-shadow:1px 7px 6px rgba(0,0,0,0.7);
+}
+
+.glass-effect {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 10px 8px 5px 2px rgba(31, 38, 135, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.force-white-text {
+  color: white !important;
+  opacity: 1 !important;
 }
