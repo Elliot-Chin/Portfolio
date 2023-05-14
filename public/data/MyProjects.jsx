@@ -75,7 +75,7 @@ const MyProjects = {
             {
                 bn: "Github",
                 icon: <BsGithub color='white' size={'calc(80% - 20px)'} />,
-                func: () => { window.open('https://www.elliotc.dev') },
+                func: () => { window.open('https://github.com/Elliot-Chin/Portfolio') },
             },
         ]
     }
