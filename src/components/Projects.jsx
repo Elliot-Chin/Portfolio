@@ -140,7 +140,7 @@ export default function Projects() {
             <path d="M 100 100 V 10 L 0 100" />
             <path d="M 30 73 L 100 18 V 10 Z"
                 fill={inner_div_color}
-                stroke-width="0" />
+                strokeWidth="0" />
         </svg>
     )
 
@@ -175,7 +175,7 @@ export default function Projects() {
             <path d="M 100 100 V 10 L 0 100" />
             <path d="M 30 73 L 100 18 V 10 Z"
                 fill={inner_div_color}
-                stroke-width="0" />
+                strokeWidth="0" />
         </svg>
     )
 

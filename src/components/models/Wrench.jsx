@@ -6,7 +6,7 @@ Command: npx gltfjsx@6.1.4 .\wrench.gltf
 import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export default function wrench(props) {
+export default function Wrench(props) {
   const { nodes, materials } = useGLTF('./models/wrench.gltf')
   return (
     <group {...props} dispose={null}>
