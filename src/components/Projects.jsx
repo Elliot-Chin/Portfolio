@@ -1,5 +1,6 @@
 import SectionTitle from "./SubComponents/SectionTitle"
 import MyProjects from "../../public/data/MyProjects"
+import UnderConstruction from "./SubComponents/UnderConstruction"
 
 export default function Projects() {
 
@@ -116,18 +117,17 @@ export default function Projects() {
         <svg
             className='
                 relative
-                -left-[20%]
+                -left-[100%]
                 transform
-                rotate-[15deg]
-                -top-[190px]
-                w-[140%]
+                -top-[100px]
+                w-[200%]
 
                 md:-top-[170px]
-                md:rotate-0
-                md:left-0
+                md:-left-[70%]
 
-                lg:w-screen
-                lg:top-0
+                lg:-left-[50%]
+                lg:w-[150%]
+                lg:top-10
                 '
 
             width="100%"
@@ -151,19 +151,18 @@ export default function Projects() {
 
             className='
                 relative
-                -left-[20%]
+                -left-[100%]
                 transform
                 scale-y-[-1]
-                w-[140%]
-                -top-[430px]
-                -rotate-[15deg]
+                w-[200%]
+                -top-[420px]
 
-                md:rotate-0
-                md:left-0
-                md:-top-[170px]
+                md:-left-[70%]
+                md:-top-[370px]
 
-                lg:w-screen
-                lg:top-0
+                lg:-left-[50%]
+                lg:w-[150%]
+                lg:-top-28
                 '
 
 
@@ -182,14 +181,258 @@ export default function Projects() {
         </svg>
     )
 
+    const BTM_DIVIDER = (
+        <div
+            className={`
+            absolute
+            h-24
+            bottom-[22rem]
+            w-full
+
+            md:bottom-0
+
+            before:absolute
+            before:pointer-events-none
+            before:h-full
+            before:w-full
+            before:bg-no-repeat
+            before:bg-pink-diamond-divider
+            transform
+            rotate-180
+            `
+            }
+        />
+    )
+
+    const PROJECT_1 = (
+        <div
+            /* Project 1 */
+            className='
+                    h-fit
+                    flex
+                    flex-col
+                    items-center
+
+                    mt-16
+                    '>
+
+            <div
+                /* image title wrapper */
+                className='
+                        relative
+                        w-full
+                        flex
+                        flex-col
+                        items-center
+                        mt-10
+                        '>
+
+                <div
+                    /* Image */
+                    className='
+                        w-full
+                        h-fit
+                        flex
+                        flex-col
+                        items-center
+
+                        md:w-2/3
+
+                        lg:w-8/12
+                        '>
+
+                    <img src={STS_Project.imgSrc}
+                        className='
+                                glass-effect
+                                rounded-40
+                                w-11/12
+                            '
+                    />
+                </div>
+
+                {setTitle({ project: STS_Project })}
+            </div>
+
+
+            <div
+                /* button wrapper */
+                className='
+                    w-full
+                    flex
+                    justify-around
+                    mb-10
+                    '>
+                {
+                    mapButtons({ project: STS_Project })
+                }
+            </div>
+
+
+            {
+                fillDesc({ project: STS_Project })
+            }
+
+        </div>
+    )
+
+    const PROJECT_2 = (
+        <div
+            /* Project 2 */
+            className='
+                    relative
+                    h-fit
+                    w-full
+                    z-[1]
+                    bg-[#008000]
+                    -top-[250px]
+                    flex
+                    flex-col
+                    items-center
+
+                    md:-top-[250px]
+
+                    lg:-top-0
+                    '>
+
+            <div
+                /* image title wrapper */
+                className='
+                        relative
+                        w-full
+                        flex
+                        flex-col
+                        items-center
+                        mt-10
+                        '>
+                <div
+                    /* Image */
+                    className='
+                        w-full
+                        h-fit
+                        flex
+                        flex-col
+                        items-center
+
+                        md:w-2/3
+
+                        lg:w-8/12
+                        '>
+                    <img
+                        src={AM_Project.imgSrc}
+                        className='
+                                glass-effect
+                                rounded-40
+                                w-11/12
+                                '/>
+
+                </div>
+
+                {setTitle({ project: AM_Project })}
+
+            </div>
+
+            <div
+                /* button wrapper */
+                className='
+                    w-11/12
+                    flex
+                    justify-evenly
+                    mb-10
+                    '>
+                {
+                    mapButtons({ project: AM_Project })
+                }
+            </div>
+
+            {
+                fillDesc({ project: AM_Project })
+            }
+
+        </div>
+    )
+
+    const PROJECT_3 = (
+        <div
+            /* Project 3 */
+            className='
+                    relative
+                    h-fit
+                    -top-[450px]
+                    flex
+                    flex-col
+                    items-center
+
+
+                    md:-top-[400px]
+
+                    lg:-top-[100px]
+                    '>
+
+
+            <div
+                /* image title wrapper */
+                className='
+                        relative
+                        w-full
+                        flex
+                        flex-col
+                        items-center
+                        mt-10
+                        '>
+                <div
+                    /* Image */
+                    className='
+                        w-2/3
+                        h-fit
+                        flex
+                        flex-col
+                        items-center
+
+                        md:w-2/3
+
+                        lg:w-10/12
+                        '>
+                    <img
+                        src={WB_Project.imgSrc}
+                        className='
+                                glass-effect
+                                rounded-40
+                                '/>
+
+                </div>
+
+                {setTitle({ project: WB_Project })}
+
+            </div>
+
+            <div
+                /* button wrapper */
+                className='
+                    w-11/12
+                    flex
+                    justify-evenly
+                    mb-10
+                    '>
+                {
+                    mapButtons({ project: WB_Project })
+                }
+            </div>
+
+            {
+                fillDesc({ project: WB_Project })
+            }
+        </div>
+    )
+
+
     // Return --------------------------------------------------------------------
     return (
         <section
             className='
+                isolate
                 h-fit
                 relative
                 flex
-                gap-5
                 flex-col
                 bg-green-950
                 overflow-x-hidden
@@ -200,222 +443,17 @@ export default function Projects() {
                 title={"Projects"}
             />
 
-            <div>
-                <div
-                    /* Project 1 */
-                    className='
-                    h-fit
-                    flex
-                    flex-col
-                    items-center
-                    '>
+            {PROJECT_1}
 
-                    <div
-                        /* image title wrapper */
-                        className='
-                        relative
-                        w-full
-                        flex
-                        flex-col
-                        items-center
-                        mt-10
-                        '>
+            {TOP_TRI}
 
-                        <div
-                            /* Image */
-                            className='
-                        w-full
-                        h-fit
-                        flex
-                        flex-col
-                        items-center
+            {PROJECT_2}
 
-                        md:w-2/3
+            {BTM_TRI}
 
-                        lg:w-8/12
-                        '>
+            {PROJECT_3}
 
-                            <img src={STS_Project.imgSrc}
-                                className='
-                                glass-effect
-                                rounded-40
-                                w-11/12
-                            '
-                            />
-                        </div>
-
-                        {setTitle({ project: STS_Project })}
-                    </div>
-
-
-                    <div
-                        /* button wrapper */
-                        className='
-                    w-full
-                    flex
-                    justify-around
-                    mb-10
-                    '>
-                        {
-                            mapButtons({ project: STS_Project })
-                        }
-                    </div>
-
-
-                    {
-                        fillDesc({ project: STS_Project })
-                    }
-
-                </div>
-
-                {TOP_TRI}
-
-                <div
-                    /* Project 2 */
-                    className='
-                    relative
-                    h-fit
-                    w-full
-                    z-[1]
-                    bg-[#008000]
-                    -top-[310px]
-                    flex
-                    flex-col
-                    items-center
-
-                    md:-top-[170px]
-
-                    lg:-top-0
-                    '>
-
-                    <div
-                        /* image title wrapper */
-                        className='
-                        relative
-                        w-full
-                        flex
-                        flex-col
-                        items-center
-                        mt-10
-                        '>
-                        <div
-                            /* Image */
-                            className='
-                        w-full
-                        h-fit
-                        flex
-                        flex-col
-                        items-center
-
-                        md:w-2/3
-
-                        lg:w-8/12
-                        '>
-                            <img
-                                src={AM_Project.imgSrc}
-                                className='
-                                glass-effect
-                                rounded-40
-                                w-11/12
-                                '/>
-
-                        </div>
-
-                        {setTitle({ project: AM_Project })}
-
-                    </div>
-
-                    <div
-                        /* button wrapper */
-                        className='
-                    w-11/12
-                    flex
-                    justify-evenly
-                    mb-10
-                    '>
-                        {
-                            mapButtons({ project: AM_Project })
-                        }
-                    </div>
-
-                    {
-                        fillDesc({ project: AM_Project })
-                    }
-
-                </div>
-
-                {BTM_TRI}
-
-                <div
-                    /* Project 3 */
-                    className='
-                    relative
-                    h-fit
-                    -top-[620px]
-                    flex
-                    flex-col
-                    items-center
-
-                    md:-top-[340px]
-
-                    lg:-top-0
-                    '>
-
-
-                    <div
-                        /* image title wrapper */
-                        className='
-                        relative
-                        w-full
-                        flex
-                        flex-col
-                        items-center
-                        mt-10
-                        '>
-                        <div
-                            /* Image */
-                            className='
-                        w-full
-                        h-fit
-                        flex
-                        flex-col
-                        items-center
-
-                        md:w-2/3
-
-                        lg:w-10/12
-                        '>
-                            <img
-                                src={WB_Project.imgSrc}
-                                className='
-                                glass-effect
-                                rounded-40
-                                '/>
-
-                        </div>
-
-                        {setTitle({ project: WB_Project })}
-
-                    </div>
-
-                    <div
-                        /* button wrapper */
-                        className='
-                    w-11/12
-                    flex
-                    justify-evenly
-                    mb-10
-                    '>
-                        {
-                            mapButtons({ project: WB_Project })
-                        }
-                    </div>
-
-                    {
-                        fillDesc({ project: WB_Project })
-                    }
-                </div>
-            </div>
+            {BTM_DIVIDER}
 
         </section>
     )

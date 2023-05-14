@@ -36,18 +36,27 @@ export default function UnderConstruction() {
             className='
             relative
             bg-yellow-400
-            h-96
-            mb-10
+            h-[30rem]
+            w-11/12
             flex
             flex-col
             justify-center
+            rounded-40
+            overflow-hidden
+            my-auto
+            mx-auto
         '
         >
             <div
                 className='
+                absolute
                 w-full
-                h-7
-                bg-black
+                h-24
+                -top-3
+                transform
+                animate-pulse
+                -scale-y-[1]
+                bg-black-construction-divider
             '
             />
 
@@ -56,22 +65,29 @@ export default function UnderConstruction() {
                 flex
                 justify-center
                 items-center
+                mt-16
                 my-10
             '
             >
                 <MdConstruction
                     size={180}
+                    className='
+                    relative
+                    '
                 />
+
                 <h1
                     className='
                     text-3xl
                     font-montserrat
                     p-5
                     text-center
+                    shadowed-text
 
                     md:text-4xl
 
                     lg:text-6xl
+
                     '
                 >
                     Under Construction
@@ -87,6 +103,7 @@ export default function UnderConstruction() {
             text-center
             mb-10
             px-5
+            shadowed-text
 
             md:text-2xl
 
@@ -98,9 +115,15 @@ export default function UnderConstruction() {
 
             <div
                 className='
+                absolute
                 w-full
-                h-7
-                bg-black
+                h-24
+                transform
+                -scale-x-[1]
+                -bottom-3
+                animate-pulse
+                duration-1000
+                bg-black-construction-divider
             '
             />
 

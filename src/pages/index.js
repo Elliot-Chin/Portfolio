@@ -4,6 +4,7 @@ import Skills from '@/components/Skills'
 import { useState } from 'react'
 import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
+import ContactMe from '@/components/ContactMe'
 
 export default function Home() {
 
@@ -40,6 +41,11 @@ export default function Home() {
     />
   )
 
+  const CONTACTME = (
+    <ContactMe
+    />
+  )
+
 
 
   return (
@@ -55,6 +61,8 @@ export default function Home() {
         {EXPERIENCE}
 
         {PROJECT}
+
+        {CONTACTME}
 
       </main>
     </div>
