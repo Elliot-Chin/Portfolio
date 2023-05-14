@@ -9,7 +9,7 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap" rel="stylesheet" />
         <link rel="icon" type='image/jpg' href="./images/EC.jpg" />
         <meta name='description' content="Hey there, I'm a software engineer with a strong background in Java and Python, and I'm super passionate about creating innovative and user-friendly solutions that make a positive impact in the world. I'm fluent in English, Mandarin, Cantonese, and Malay, so I can communicate effectively with people from diverse cultural backgrounds. When I'm not coding, you'll probably find me hiking or curled up with a good book. If you have any inquiries, don't hesitate to contact me!" />
-
+        <meta name='theme-color' content='#FFA500' />
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0MH67YDFQN" />
         <script
