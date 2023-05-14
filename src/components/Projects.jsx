@@ -1,6 +1,6 @@
 import SectionTitle from "./SubComponents/SectionTitle"
 import MyProjects from "../../public/data/MyProjects"
-
+import UnderConstruction from "./SubComponents/UnderConstruction"
 
 export default function Projects() {
 
@@ -197,167 +197,10 @@ export default function Projects() {
                 title={"Projects"}
             />
 
-
-            <div
-                /* Project 1 */
-                className='
-            h-fit
-            flex
-            flex-col
-            items-center
-            '
-            >
-
-                <div
-                    /* image title wrapper */
-                    className='
-                relative
-                w-full
-                flex
-                flex-col
-                items-center
-                mt-10
-                '
-                >
-                    <div
-                        /* Image */
-                        className={`
-                        bg-[url(/images/STS.png)]
-                        bg-no-repeat
-                        bg-cover
-                        w-80
-                        h-24
-                        rounded-lg
-                        glass-effect
-
-                        md:h-52
-                        md:w-[50rem]
-
-                        lg:h-52
-                        lg:w-[50rem]
-                        `}
-                    />
-
-                    {setTitle({ project: STS_Project })}
-                </div>
+            <UnderConstruction
+            />
 
 
-                <div
-                    /* button wrapper */
-                    className='
-                    w-full
-                    flex
-                    justify-around
-                    mb-10
-                '>
-                    {
-                        mapButtons({ project: STS_Project })
-                    }
-                </div>
-
-
-                {
-                    fillDesc({ project: STS_Project })
-                }
-
-            </div>
-
-            {TOP_TRI}
-
-            <div
-                /* Project 2 */
-                className='
-            relative
-            h-fit
-            w-full
-            z-[1]
-            bg-[#008000]
-            -top-[310px]
-            flex
-            flex-col
-            items-center
-
-            md:-top-[170px]
-
-            lg:-top-0
-            '
-            >
-
-                <div
-                    /* image title wrapper */
-                    className='
-                relative
-                w-full
-                flex
-                flex-col
-                items-center
-                mt-10
-                '
-                >
-                    <div
-                        /* Image */
-                        className='
-                        w-full
-                        h-fit
-                        flex
-                        flex-col
-                        items-center
-
-                        md:w-2/3
-
-                        lg:w-8/12
-                    '
-                    >
-                        <img src='/images/SDP.jpg'
-                            className='
-                            rounded-40
-                            w-11/12
-                            '
-                        />
-
-                    </div>
-
-                    {setTitle({ project: AM_Project })}
-
-                </div>
-
-                <div
-                    /* button wrapper */
-                    className='
-                    w-11/12
-                    flex
-                    justify-evenly
-                    mb-10
-                '>
-                    {
-                        mapButtons({ project: AM_Project })
-                    }
-                </div>
-
-                {
-                    fillDesc({ project: AM_Project })
-                }
-
-            </div>
-
-            {BTM_TRI}
-
-            <div
-                /* Project 3 */
-                className='
-                relative
-            border
-            h-96
-            -top-[620px]
-            border-blue-600
-
-            md:-top-[340px]
-
-            lg:-top-0
-            '
-            >
-
-            </div>
 
         </section>
     )

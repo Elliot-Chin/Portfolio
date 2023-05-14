@@ -54,7 +54,7 @@ export default function Home() {
 
         {EXPERIENCE}
 
-        {/* {PROJECT} */}
+        {PROJECT}
 
       </main>
     </div>
