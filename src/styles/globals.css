@@ -29,7 +29,6 @@ a {
   -webkit-backdrop-filter: blur(20px);
 }
 
-.force-white-text {
-  color: white !important;
+.force-opaque {
   opacity: 1 !important;
 }

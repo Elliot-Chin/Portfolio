@@ -20,18 +20,19 @@ export default function VTElement({ duration, position, location, skills, desc, 
             contentStyle={{
                 whiteSpace: 'pre-line',
                 borderRadius: '40px',
-                backgroundImage: "linear-gradient(to bottom right, #8b8b8b, #0b0b0b)",
+                backgroundImage: "linear-gradient(to bottom right, #da48ea, #37013d)",
                 boxShadow: '0 8px 20px rgba(0, 0, 0, 0.7)',
                 color: '#e2e2e2',
             }}
 
             iconStyle={{
-                backgroundImage: "linear-gradient(to bottom right, #8b8b8b, #0b0b0b)",
+                backgroundImage: "linear-gradient(to bottom right, #da48ea, #37013d)",
             }}
 
             dateClassName="
             mt-5
             w-full
+            force-opaque
             "
 
             date={(
@@ -169,11 +170,11 @@ export default function VTElement({ duration, position, location, skills, desc, 
                         <AwesomeButton
                             type='secondary'
                             style={{
-                                '--button-secondary-color': '#8b8b8b',
+                                '--button-secondary-color': '#37013d',
                                 '--button-secondary-color-dark': 'dark-gray',
                                 '--button-secondary-color-light': 'white',
-                                '--button-secondary-color-hover': '#0b0b0b',
-                                '--button-secondary-color-active': '#0b0b0b',
+                                '--button-secondary-color-hover': '#da48ea',
+                                '--button-secondary-color-active': '#da48ea',
                                 '--button-secondary-border': '0px',
                                 '--button-default-border-radius': '40px',
                                 '--button-raise-level': '6px',
@@ -202,11 +203,11 @@ export default function VTElement({ duration, position, location, skills, desc, 
                             key={index}
                             type='secondary'
                             style={{
-                                '--button-secondary-color': '#8b8b8b',
+                                '--button-secondary-color': '#37013d',
                                 '--button-secondary-color-dark': 'dark-gray',
                                 '--button-secondary-color-light': 'white',
-                                '--button-secondary-color-hover': '#0b0b0b',
-                                '--button-secondary-color-active': '#0b0b0b',
+                                '--button-secondary-color-hover': '#da48ea',
+                                '--button-secondary-color-active': '#da48ea',
                                 '--button-secondary-border': '0px',
                                 '--button-default-border-radius': '40px',
                                 '--button-raise-level': '6px',

@@ -1,6 +1,5 @@
 import SectionTitle from "./SubComponents/SectionTitle"
 import MyProjects from "../../public/data/MyProjects"
-import UnderConstruction from "./SubComponents/UnderConstruction"
 
 export default function Projects() {
 
@@ -13,6 +12,7 @@ export default function Projects() {
 
     const STS_Project = MyProjects.STS
     const AM_Project = MyProjects.AM
+    const WB_Project = MyProjects.WB
 
     // Util funcs ----------------------------------------------------------------
 
@@ -119,15 +119,15 @@ export default function Projects() {
                 -left-[20%]
                 transform
                 rotate-[15deg]
-                -top-[180px]
+                -top-[190px]
                 w-[140%]
 
-                md:-top-[150px]
+                md:-top-[170px]
                 md:rotate-0
                 md:left-0
 
                 lg:w-screen
-                lg:top-5
+                lg:top-0
                 '
 
             width="100%"
@@ -137,10 +137,12 @@ export default function Projects() {
             fill={outer_div_color}
             xmlns="http://www.w3.org/2000/svg"
         >
-            <path d="M 100 100 V 10 L 0 100" />
+            <path d="M 100 100 V 10 L 0 100"
+            />
             <path d="M 30 73 L 100 18 V 10 Z"
                 fill={inner_div_color}
-                strokeWidth="0" />
+                strokeWidth="0"
+            />
         </svg>
     )
 
@@ -153,15 +155,15 @@ export default function Projects() {
                 transform
                 scale-y-[-1]
                 w-[140%]
-                -top-[440px]
+                -top-[430px]
                 -rotate-[15deg]
 
                 md:rotate-0
                 md:left-0
-                md:-top-[190px]
+                md:-top-[170px]
 
                 lg:w-screen
-                lg:-top-5
+                lg:top-0
                 '
 
 
@@ -175,7 +177,8 @@ export default function Projects() {
             <path d="M 100 100 V 10 L 0 100" />
             <path d="M 30 73 L 100 18 V 10 Z"
                 fill={inner_div_color}
-                strokeWidth="0" />
+                strokeWidth="0"
+            />
         </svg>
     )
 
@@ -197,10 +200,222 @@ export default function Projects() {
                 title={"Projects"}
             />
 
-            <UnderConstruction
-            />
+            <div>
+                <div
+                    /* Project 1 */
+                    className='
+                    h-fit
+                    flex
+                    flex-col
+                    items-center
+                    '>
+
+                    <div
+                        /* image title wrapper */
+                        className='
+                        relative
+                        w-full
+                        flex
+                        flex-col
+                        items-center
+                        mt-10
+                        '>
+
+                        <div
+                            /* Image */
+                            className='
+                        w-full
+                        h-fit
+                        flex
+                        flex-col
+                        items-center
+
+                        md:w-2/3
+
+                        lg:w-8/12
+                        '>
+
+                            <img src={STS_Project.imgSrc}
+                                className='
+                                glass-effect
+                                rounded-40
+                                w-11/12
+                            '
+                            />
+                        </div>
+
+                        {setTitle({ project: STS_Project })}
+                    </div>
 
 
+                    <div
+                        /* button wrapper */
+                        className='
+                    w-full
+                    flex
+                    justify-around
+                    mb-10
+                    '>
+                        {
+                            mapButtons({ project: STS_Project })
+                        }
+                    </div>
+
+
+                    {
+                        fillDesc({ project: STS_Project })
+                    }
+
+                </div>
+
+                {TOP_TRI}
+
+                <div
+                    /* Project 2 */
+                    className='
+                    relative
+                    h-fit
+                    w-full
+                    z-[1]
+                    bg-[#008000]
+                    -top-[310px]
+                    flex
+                    flex-col
+                    items-center
+
+                    md:-top-[170px]
+
+                    lg:-top-0
+                    '>
+
+                    <div
+                        /* image title wrapper */
+                        className='
+                        relative
+                        w-full
+                        flex
+                        flex-col
+                        items-center
+                        mt-10
+                        '>
+                        <div
+                            /* Image */
+                            className='
+                        w-full
+                        h-fit
+                        flex
+                        flex-col
+                        items-center
+
+                        md:w-2/3
+
+                        lg:w-8/12
+                        '>
+                            <img
+                                src={AM_Project.imgSrc}
+                                className='
+                                glass-effect
+                                rounded-40
+                                w-11/12
+                                '/>
+
+                        </div>
+
+                        {setTitle({ project: AM_Project })}
+
+                    </div>
+
+                    <div
+                        /* button wrapper */
+                        className='
+                    w-11/12
+                    flex
+                    justify-evenly
+                    mb-10
+                    '>
+                        {
+                            mapButtons({ project: AM_Project })
+                        }
+                    </div>
+
+                    {
+                        fillDesc({ project: AM_Project })
+                    }
+
+                </div>
+
+                {BTM_TRI}
+
+                <div
+                    /* Project 3 */
+                    className='
+                    relative
+                    h-fit
+                    -top-[620px]
+                    flex
+                    flex-col
+                    items-center
+
+                    md:-top-[340px]
+
+                    lg:-top-0
+                    '>
+
+
+                    <div
+                        /* image title wrapper */
+                        className='
+                        relative
+                        w-full
+                        flex
+                        flex-col
+                        items-center
+                        mt-10
+                        '>
+                        <div
+                            /* Image */
+                            className='
+                        w-full
+                        h-fit
+                        flex
+                        flex-col
+                        items-center
+
+                        md:w-2/3
+
+                        lg:w-10/12
+                        '>
+                            <img
+                                src={WB_Project.imgSrc}
+                                className='
+                                glass-effect
+                                rounded-40
+                                '/>
+
+                        </div>
+
+                        {setTitle({ project: WB_Project })}
+
+                    </div>
+
+                    <div
+                        /* button wrapper */
+                        className='
+                    w-11/12
+                    flex
+                    justify-evenly
+                    mb-10
+                    '>
+                        {
+                            mapButtons({ project: WB_Project })
+                        }
+                    </div>
+
+                    {
+                        fillDesc({ project: WB_Project })
+                    }
+                </div>
+            </div>
 
         </section>
     )

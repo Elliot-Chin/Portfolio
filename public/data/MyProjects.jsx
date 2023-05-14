@@ -12,6 +12,7 @@ const MyProjects = {
         The end result was a comprehensive solution with a robust backend, a full CI/CD pipeline, and a live hosted application with complete test coverage. This dashboard provided advisors with valuable information to assist them in their advising responsibilities.
 
         Subsequently, I was hired as a software developer by the same professor to develop a similar tool on a department-wide level rather than just for the professor alone.`,
+        imgSrc: '/images/STS.png',
         buttons: [
             {
                 bn: "Github",
@@ -36,7 +37,7 @@ const MyProjects = {
         During the generation of music, we faced the challenge of deciding which patterns to use. To address this, we created a rule set to determine which designs would fit best into the current generation  based on key parameters that have been stored in the database.
         
         We also introduced some randomness in the decision-making process to avoid repeating patterns. You can also find a short interview on our project on <a href='https://www.cbc.ca/news/canada/new-brunswick/unb-engineering-design-symposium-1.6411721' target='_blank'>CBC News</a>.`,
-
+        imgSrc: '/images/SDP.jpg',
         buttons: [
             {
                 bn: "Github",
@@ -53,6 +54,25 @@ const MyProjects = {
                 icon: <BsNewspaper color='white' size={'calc(80% - 20px)'} />,
                 func: () => { window.open('https://www.cbc.ca/news/canada/new-brunswick/unb-engineering-design-symposium-1.6411721') }
                 ,
+            },
+        ]
+    },
+
+    WB: {
+        title: 'Portfolio Website',
+        desc: `After successfully building my personal portfolio website using React, I decided to challenge myself further by creating another portfolio website using NextJS. The goal was to utilize the knowledge I gained from my previous project and explore the capabilities of NextJS. However, this time, I opted to use a different CSS framework called TailwindCSS to style the website components.
+
+        By using TailwindCSS, I was able to quickly design the website by utilizing pre-defined CSS classes to style various elements on the webpage. This streamlined my development process and allowed me to focus on enhancing the functionality of the website.
+        
+        The second portfolio website I built includes updated versions of my past projects and experiences, which showcase my growth as a developer. While still a work in progress, visitors can still explore my work and see how I applied the skills I gained from both the React and NextJS projects.
+        
+        In summary, these projects provided an excellent opportunity for me to expand my web development skills, experiment with new frameworks, and demonstrate my abilities as a developer. The experience gave me a deeper understanding of web application development, and it has opened doors to many possibilities for future projects.`,
+        imgSrc: '/images/EC.jpg',
+        buttons: [
+            {
+                bn: "Github",
+                icon: <BsGithub color='white' size={'calc(80% - 20px)'} />,
+                func: () => { window.open('https://www.elliotc.dev') },
             },
         ]
     }
