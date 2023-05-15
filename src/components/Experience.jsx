@@ -21,6 +21,7 @@ export default function Experience() {
             title={"Experience"}
             styles={{
                 top: '20px',
+                color: 'rgb(31,41,55)',
             }}
         />
     )
@@ -74,7 +75,7 @@ export default function Experience() {
             "
             >
                 <VerticalTimeline
-                    lineColor="#6c6c6c"
+                    lineColor="rgb(31,41,55)"
                     animate={false}
                 >
 
@@ -90,7 +91,6 @@ export default function Experience() {
                                 buttons={buttons}
                                 buttonFuncs={buttonFuncs}
                                 skills={skills}
-
                                 key={i}
                             />
                         ))

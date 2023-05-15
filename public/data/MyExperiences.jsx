@@ -18,7 +18,7 @@ const Experiences = [
         buttons: ["View Employer Evaluation"],
 
         buttonFuncs: [
-            () => { window.open('./WTR/Software Developer WTR.pdf') },
+            () => { window.open('/WTR/Software Developer WTR.pdf') },
         ],
         skills: [
             'Full-stack developer',
@@ -52,11 +52,11 @@ const Experiences = [
         location: 'Department of Chemistry',
         desc: "My responsibilities in the Department of Chemistry include learning how to use a new simulation software called COMSOL, which stands for 'Multiphysics Simulation Software.' \n\n \
         This tool was recently purchased by our department to help us simulate complex physical systems and phenomena in a virtual environment, allowing us to better understand and optimize our experiments. \n\n \
-        I worked closely with the <a href='https://ignaszakresearch.wordpress.com' target='_blank'>Dr. Ignaszak research group</a> and their students, assisting them in simulating their experiments using this new tool, and teaching them how to use it as well. \n\n \
+        I worked closely with the <a href='https://ignaszakresearch.wordpress.com' title='UNB | Dr. Ignaszak Research Group' target='_blank'>Dr. Ignaszak research group</a> and their students, assisting them in simulating their experiments using this new tool, and teaching them how to use it as well. \n\n \
         Additionally, I was responsible for troubleshooting any computer problems that may arise in the lab and attending weekly meetings to report on my progress.\n\n \
         I take pride in contributing to the advancement of research in our department, and I am constantly developing my skills to provide the best possible service to our team.",
         buttons: ["View Employer Evaluation"],
-        buttonFuncs: [() => { window.open('./WTR/Research Assistant WTR.pdf') },],
+        buttonFuncs: [() => { window.open('/WTR/Research Assistant WTR.pdf') },],
         skills: [
             'Troubleshooting',
             'Collaboration and teamwork',
@@ -73,7 +73,7 @@ const Experiences = [
         Additionally, when systems are returned for repair, I run diagnostic tests to identify and fix any issues, and also perform flush and fill operations on systems that have been repaired. \n\n \
         Another key aspect of my job is to support faculty and staff by imaging new systems that they have purchased. This involves configuring the software and settings on new computers so that they are ready to use right out of the box. Finally, I have also developed a Java Swing application that helps ITS staff members quickly locate labs with specific software.",
         buttons: ["View Employer Evaluation"],
-        buttonFuncs: [() => { window.open('./WTR/Student Consultant WTR.pdf') }],
+        buttonFuncs: [() => { window.open('/WTR/Student Consultant WTR.pdf') }],
         skills: [
             'System imaging',
             'Software configuration',

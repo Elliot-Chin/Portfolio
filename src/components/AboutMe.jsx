@@ -58,13 +58,13 @@ export default function AboutMe() {
 
     const DESCRIPTION = (
         <p
-            className={
-                `
+            className='
                         relative
                         font-hindMadurai
                         whitespace-pre-line
                         p-10
                         mx-auto
+                        leading-7
                         w-full
                         text-lg
                         text-white
@@ -74,8 +74,7 @@ export default function AboutMe() {
                         lg:text-xl
                         lg:w-1/2
                         lg:my-auto
-                        `
-            }
+                        '
         >
             {AboutMeIntro}
         </p>

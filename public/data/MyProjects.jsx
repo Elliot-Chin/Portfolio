@@ -25,7 +25,7 @@ const MyProjects = {
 
     AM: {
         title: 'Automated Musicians',
-        desc: `The project was completed as a part of my senior year engineering capstone design project, along with <a href='https://www.linkedin.com/in/edward-chang-2134791a4/' target='_blank'>Edward Chang</a>, <a href='https://www.linkedin.com/in/owen-lee-b3b3a2197/' target='_blank'>Owen Lee</a> and <a href='https://www.linkedin.com/in/thomas-campbell-a6a245184/' target='_blank'>Thomas Campbell</a>.
+        desc: `The project was completed as a part of my senior year engineering capstone design project, along with <a href='https://www.linkedin.com/in/edward-chang-2134791a4/' title='LinkedIn | Edward Chang' target='_blank'>Edward Chang</a>, <a href='https://www.linkedin.com/in/owen-lee-b3b3a2197/' title='LinkedIn | Owen Lee' target='_blank'>Owen Lee</a> and <a href='https://www.linkedin.com/in/thomas-campbell-a6a245184/' title='LinkedIn | Thomas Campbell' target='_blank'>Thomas Campbell</a>.
         
         It was mainly done in Python. It aimed to explore automated music generation using programmed music theory, pattern recognition, and extraction. The project was divided into three sections: Musical Algorithms, Pattern Recognition and Extraction, and Music Composition Generator.
 
@@ -37,7 +37,7 @@ const MyProjects = {
 
         During the generation of music, we faced the challenge of deciding which patterns to use. To address this, we created a rule set to determine which designs would fit best into the current generation  based on key parameters that have been stored in the database.
         
-        We also introduced some randomness in the decision-making process to avoid repeating patterns. You can also find a short interview on our project on <a href='https://www.cbc.ca/news/canada/new-brunswick/unb-engineering-design-symposium-1.6411721' target='_blank'>CBC News</a>.`,
+        We also introduced some randomness in the decision-making process to avoid repeating patterns. You can also find a short interview on our project on <a href='https://www.cbc.ca/news/canada/new-brunswick/unb-engineering-design-symposium-1.6411721' title='CBC News | UNB Engineering Design Symposium' target='_blank'>CBC News</a>.`,
         imgSrc: '/images/SDP.jpg',
         imgAlt: 'Automated Musician Poster',
         buttons: [

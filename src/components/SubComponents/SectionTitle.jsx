@@ -10,13 +10,11 @@ export default function SectionTitle({ title, styles }) {
                     relative
                     min-w-full
                     font-montserrat
-                    shadowed-text
                     text-6xl
                     text-center
                     mb-5
                     mt-10
                     text-white
-    
     
                     md:text-7xl
     

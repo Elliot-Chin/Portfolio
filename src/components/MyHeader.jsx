@@ -88,14 +88,13 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
     const TITLE = (
         <h1
             className={`
-            text-gray-950
-            shadowed-text
+            text-gray-200
             font-montserrat
             text-5xl
             text-center
-            drop-shadow-lg
 
             md:text-7xl
+            md:text-gray-800
 
             lg:text-9xl
             `}>
@@ -107,16 +106,15 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
         <p
             className={
                 `
-                text-gray-900
+                text-gray-200
                 font-montserrat
                 text-1xl
                 text-center
 
                 md:text-2xl
+                md:text-gray-800
 
                 lg:text-3xl
-                
-                shadowed-text
                 `
             }
         >
