@@ -1,7 +1,9 @@
 import SectionTitle from "./SubComponents/SectionTitle"
 import MyProjects from "../../public/data/MyProjects"
-import UnderConstruction from "./SubComponents/UnderConstruction"
 import Image from "next/image"
+import Lottie from "lottie-react"
+import animationData from '../../public/animations/musicnotes.json'
+import barGraph from '../../public/animations/barGraph.json'
 
 export default function Projects() {
 
@@ -20,9 +22,20 @@ export default function Projects() {
 
     const mapButtons = ({ project }) => (
 
-        project.buttons.map(({ bn, icon, func }, index) => (
-            <div
-                className='
+        <div
+            className='
+        flex
+        w-full
+        justify-evenly
+
+        md:w-2/3
+        '
+
+        >
+            {
+                project.buttons.map(({ bn, icon, func }, index) => (
+                    <div
+                        className='
                 flex
                 flex-col
                 items-center
@@ -42,12 +55,12 @@ export default function Projects() {
                 hover:transform
                 hover:-translate-y-1
             '
-                key={index}
-                onClick={func}
-            >
-                {icon}
-                <span
-                    className='
+                        key={index}
+                        onClick={func}
+                    >
+                        {icon}
+                        <span
+                            className='
                     text-white
                     text-lg
                     px-2
@@ -57,13 +70,13 @@ export default function Projects() {
 
                     md:text-lg
                     '
-                >
-                    {bn}
-                </span>
-
-            </div>
-        ))
-
+                        >
+                            {bn}
+                        </span>
+                    </div>
+                ))
+            }
+        </div>
     )
 
     const fillDesc = ({ project }) => (
@@ -96,6 +109,7 @@ export default function Projects() {
             font-montserrat
             my-10
             text-2xl
+            z-10
             w-full
             text-center
             shadowed-text
@@ -213,9 +227,21 @@ export default function Projects() {
                     flex
                     flex-col
                     items-center
-
-                    mt-16
+                    mt-36
+                    relative
                     '>
+
+            <Lottie
+                animationData={barGraph}
+                className='
+                -top-[6.5rem]
+                absolute
+                w-40
+
+                md:w-56
+                md:-top-40
+            '
+            />
 
             <div
                 /* image title wrapper */
@@ -258,21 +284,13 @@ export default function Projects() {
                 </div>
 
                 {setTitle({ project: STS_Project })}
+
             </div>
 
 
-            <div
-                /* button wrapper */
-                className='
-                    w-full
-                    flex
-                    justify-around
-                    mb-10
-                    '>
-                {
-                    mapButtons({ project: STS_Project })
-                }
-            </div>
+            {
+                mapButtons({ project: STS_Project })
+            }
 
 
             {
@@ -304,6 +322,7 @@ export default function Projects() {
             <div
                 /* image title wrapper */
                 className='
+                        isolate
                         relative
                         w-full
                         flex
@@ -341,25 +360,31 @@ export default function Projects() {
 
                 {setTitle({ project: AM_Project })}
 
+                <Lottie animationData={animationData}
+                    className='
+                    absolute
+                    h-36
+                    w-full
+                    -top-28
+                    -z-10
+
+                    md:h-44
+                    md:bottom-0
+
+                    lg:h-96
+                    lg:-top-48
+            '
+                />
+
             </div>
 
-            <div
-                /* button wrapper */
-                className='
-                    w-11/12
-                    flex
-                    justify-evenly
-                    mb-10
-                    '>
-                {
-                    mapButtons({ project: AM_Project })
-                }
-            </div>
+            {
+                mapButtons({ project: AM_Project })
+            }
 
             {
                 fillDesc({ project: AM_Project })
             }
-
         </div>
     )
 
@@ -421,18 +446,9 @@ export default function Projects() {
 
             </div>
 
-            <div
-                /* button wrapper */
-                className='
-                    w-11/12
-                    flex
-                    justify-evenly
-                    mb-10
-                    '>
-                {
-                    mapButtons({ project: WB_Project })
-                }
-            </div>
+            {
+                mapButtons({ project: WB_Project })
+            }
 
             {
                 fillDesc({ project: WB_Project })
