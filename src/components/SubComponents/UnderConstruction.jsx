@@ -83,6 +83,7 @@ export default function UnderConstruction() {
                     p-5
                     text-center
                     shadowed-text
+                    yellow-shadow
 
                     md:text-4xl
 
@@ -104,6 +105,7 @@ export default function UnderConstruction() {
             mb-10
             px-5
             shadowed-text
+            yellow-shadow
 
             md:text-2xl
 

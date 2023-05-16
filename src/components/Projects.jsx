@@ -20,7 +20,7 @@ export default function Projects() {
 
     // Util funcs ----------------------------------------------------------------
 
-    const mapButtons = ({ project }) => (
+    const mapButtons = ({ project, colorClass }) => (
 
         <div
             className='
@@ -35,26 +35,27 @@ export default function Projects() {
             {
                 project.buttons.map(({ bn, icon, func }, index) => (
                     <div
-                        className='
-                flex
-                flex-col
-                items-center
-                font-bold
-                p-3
-                glass-effect
-                rounded-40
+                        className={`
+                        flex
+                        flex-col
+                        items-center
+                        font-bold
+                        p-3
+                        glass-effect
+                        ${colorClass}
+                        rounded-40
 
-                transition
-                duration-700
-                w-24
+                        transition
+                        duration-700
+                        w-24
 
-                lg:w-36
+                        lg:w-36
 
-                hover:cursor-pointer
-                hover:bg-green-400
-                hover:transform
-                hover:-translate-y-1
-            '
+                        hover:cursor-pointer
+                        hover:bg-green-400
+                        hover:transform
+                        hover:-translate-y-1
+                        `}
                         key={index}
                         onClick={func}
                     >
@@ -102,10 +103,10 @@ export default function Projects() {
         />
     )
 
-    const setTitle = ({ project }) => (
+    const setTitle = ({ project, colorClass }) => (
         <h1
             /* title */
-            className='
+            className={`
             font-montserrat
             my-10
             text-2xl
@@ -113,12 +114,13 @@ export default function Projects() {
             w-full
             text-center
             shadowed-text
+            ${colorClass}
             text-white
 
             md:text-4xl
 
             lg:text-6xl
-            '
+            `}
         >
             {project.title}
         </h1>
@@ -277,19 +279,20 @@ export default function Projects() {
                         unoptimized
                         className='
                                 glass-effect
+                                dark-green-shadow
                                 rounded-40
                                 w-11/12
                             '
                     />
                 </div>
 
-                {setTitle({ project: STS_Project })}
+                {setTitle({ project: STS_Project, colorClass: 'dark-green-shadow' })}
 
             </div>
 
 
             {
-                mapButtons({ project: STS_Project })
+                mapButtons({ project: STS_Project, colorClass: 'dark-green-shadow' })
             }
 
 
@@ -352,13 +355,14 @@ export default function Projects() {
                         alt={AM_Project.imgAlt}
                         className='
                                 glass-effect
+                                green-shadow
                                 rounded-40
                                 w-11/12
                                 '/>
 
                 </div>
 
-                {setTitle({ project: AM_Project })}
+                {setTitle({ project: AM_Project, colorClass: 'green-shadow' })}
 
                 <Lottie animationData={animationData}
                     className='
@@ -379,7 +383,7 @@ export default function Projects() {
             </div>
 
             {
-                mapButtons({ project: AM_Project })
+                mapButtons({ project: AM_Project, colorClass: 'green-shadow' })
             }
 
             {
@@ -437,17 +441,18 @@ export default function Projects() {
                         alt={WB_Project.imgAlt}
                         className='
                                 glass-effect
+                                dark-green-shadow
                                 rounded-40
                                 '/>
 
                 </div>
 
-                {setTitle({ project: WB_Project })}
+                {setTitle({ project: WB_Project, colorClass: 'dark-green-shadow' })}
 
             </div>
 
             {
-                mapButtons({ project: WB_Project })
+                mapButtons({ project: WB_Project, colorClass: 'dark-green-shadow' })
             }
 
             {

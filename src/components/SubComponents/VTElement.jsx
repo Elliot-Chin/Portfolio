@@ -114,6 +114,7 @@ export default function VTElement({ duration, position, location, skills, desc, 
                         key={index}
                         className="
                                 glass-effect
+                                purple-shadow
                                 text-white
                                 px-3
                                 py-1
@@ -211,7 +212,7 @@ export default function VTElement({ duration, position, location, skills, desc, 
                 whiteSpace: 'pre-line',
                 borderRadius: '40px',
                 backgroundImage: "linear-gradient(to bottom right, #da48ea, #37013d)",
-                boxShadow: '0 8px 20px rgba(0, 0, 0, 0.7)',
+                boxShadow: '1px 13px 7px 0px rgba(153, 0, 115, 0.4)',
                 color: 'white',
             }}
 

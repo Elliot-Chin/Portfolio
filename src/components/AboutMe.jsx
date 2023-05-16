@@ -127,6 +127,7 @@ export default function AboutMe() {
                     flex-col
                     flex-wrap
                     glass-effect
+                    orange-shadow
                     w-10/12
                     mx-auto
                     mb-32

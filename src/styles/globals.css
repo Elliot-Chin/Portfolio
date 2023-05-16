@@ -22,13 +22,56 @@ a {
 
 .shadowed-text {
   text-shadow:1px 7px 6px rgba(0,0,0,0.7);
+
+  &.dark-green-shadow {
+    text-shadow: 5px 7px 4px rgba(0, 26, 0, 0.5);
+  }
+
+  &.green-shadow {
+    text-shadow: 5px 7px 4px rgba(0, 40, 0, 0.5);
+  }
+
+  &.yellow-shadow {
+    text-shadow: 5px 7px 4px rgba(153, 92, 0, 0.5);
+  }
 }
 
 .glass-effect {
+  box-shadow: 10px 15px 10px 0px rgba(0, 0, 0, 0.4);
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 10px 8px 5px 2px rgba(31, 38, 135, 0.4);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+
+  &.white-shadow {
+    box-shadow: 10px 15px 10px 0px rgba(255, 255, 255, 0.4);
+  }
+
+  &.blue-shadow {
+    box-shadow: 10px 15px 10px 0px rgba(0, 0, 128, 0.4);
+  }
+
+  &.orange-shadow {
+    box-shadow: 10px 15px 10px 0px rgba(153, 92, 0, 0.4);
+  }
+
+  &.purple-shadow {
+    box-shadow: 10px 15px 10px 0px rgba(102, 0, 51, 0.4);
+  }
+
+  &.dark-green-shadow {
+    box-shadow: 10px 15px 10px 0px rgba(0, 26, 0, 0.4);
+  }
+
+  &.green-shadow {
+    box-shadow: 10px 15px 10px 0px rgba(0, 40, 0, 0.4);
+  }
+}
+
+
+
+
+.glass-effect-orange {
+
 }
 
 .force-opaque {

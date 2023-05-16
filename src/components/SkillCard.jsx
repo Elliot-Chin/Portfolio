@@ -34,6 +34,7 @@ const SkillCard = ({ IconModel, title, skills }) => {
             glareBorderRadius="40px"
             className={`
             glass-effect
+            blue-shadow
             bg-blue-200
             rounded-40
             w-5/6
@@ -126,8 +127,8 @@ const SkillCard = ({ IconModel, title, skills }) => {
                 {
 
                     skills?.map((s, i) => (
-                <span
-                    className={`
+                        <span
+                            className={`
                                 relative
                                 text-l
                                 px-5
@@ -136,17 +137,18 @@ const SkillCard = ({ IconModel, title, skills }) => {
                                 rounded-40
                                 font-semibold
                                 glass-effect
+                                blue-shadow
 
                                 md:text-xl
 
                                 lg:text-2xl
                         `
-                    }
-                    key={i}
-                >
-                    {s}
-                </span>
-                ))
+                            }
+                            key={i}
+                        >
+                            {s}
+                        </span>
+                    ))
                 }
             </div>
         </Tilt >
