@@ -3,7 +3,7 @@ import MyProjects from "../../public/data/MyProjects"
 import Image from "next/image"
 import Lottie from "lottie-react"
 import animationData from '../../public/animations/musicnotes.json'
-import barGraph from '../../public/animations/barGraph.json'
+import barGraph from '../../public/animations/bargraph.json'
 
 export default function Projects() {
 
