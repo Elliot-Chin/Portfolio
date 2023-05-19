@@ -8,8 +8,11 @@ export default function Model(props) {
 
 
   useEffect(() => {
-
-    actions[names[0]].reset().fadeIn(3).play()
+    const name = names[0]
+    actions[name]
+      .reset()
+      .fadeIn(3)
+      .play()
 
   }, [])
 

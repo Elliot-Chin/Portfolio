@@ -48,13 +48,6 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
         await sleep(200)
     }
 
-    const runTextAnimation = async () => {
-        await _animateWriteTitle()
-        await _animateWriteSubtitle()
-        setCanScroll(true)
-        setScrolled(false)
-    }
-
     const handleScroll = (e) => {
 
         if (!canScroll) {
@@ -70,6 +63,13 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
     // UseEffect ----------------------------------------------------------------
 
     useEffect(() => {
+        const runTextAnimation = async () => {
+            await _animateWriteTitle()
+            await _animateWriteSubtitle()
+            setCanScroll(true)
+            setScrolled(false)
+        }
+
         runTextAnimation()
     }, [])
 

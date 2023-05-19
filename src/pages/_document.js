@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 
 export default function Document() {
   return (
@@ -11,8 +12,14 @@ export default function Document() {
         <meta name='description' content="Hey there, I'm a software engineer with a strong background in Java and Python, and I'm super passionate about creating innovative and user-friendly solutions that make a positive impact in the world. I'm fluent in English, Mandarin, Cantonese, and Malay, so I can communicate effectively with people from diverse cultural backgrounds. When I'm not coding, you'll probably find me hiking or curled up with a good book. If you have any inquiries, don't hesitate to contact me!" />
         <meta name='theme-color' content='#FFA500' />
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0MH67YDFQN" />
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" />
+        <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-0MH67YDFQN"
+        strategy="afterInteractive"/>
+        <Script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+          strategy="beforeInteractive"
+          />
         <script
           dangerouslySetInnerHTML={{
             __html: `

@@ -24,7 +24,8 @@ export default function UnderConstruction() {
     // UseEffect -----------------------------------------------------------------
 
     useEffect(() => {
-        setMsg(messages[Math.floor(Math.random() * messages.length)])
+        const idx = Math.floor(Math.random() * messages.length)
+        setMsg(messages[idx])
     }, [])
 
     // Components ----------------------------------------------------------------
