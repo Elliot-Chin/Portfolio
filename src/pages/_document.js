@@ -12,6 +12,7 @@ export default function Document() {
         <meta name='theme-color' content='#FFA500' />
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0MH67YDFQN" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" />
         <script
           dangerouslySetInnerHTML={{
             __html: `

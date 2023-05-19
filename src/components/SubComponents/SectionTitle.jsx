@@ -5,7 +5,7 @@
 export default function SectionTitle({ title, styles }) {
     return (
         <h1
-            id='Temp'
+            id={title}
             className={`
                     relative
                     min-w-full

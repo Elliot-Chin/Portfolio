@@ -1,4 +1,4 @@
-import SkillCard from "./SkillCard"
+import SkillCard from "./SubComponents/SkillCard"
 import MySkills from "../../public/data/MySkills"
 import SectionTitle from "./SubComponents/SectionTitle"
 

@@ -1,5 +1,6 @@
+import ContactForm from "./ContactForm";
+import Links from "./Links";
 import SectionTitle from "./SubComponents/SectionTitle";
-import UnderConstruction from "./SubComponents/UnderConstruction";
 
 
 
@@ -25,6 +26,7 @@ export default function ContactMe() {
                 flex-wrap
                 flex
                 flex-col
+                gap-y-10
                 pb-10
                 bg-gradient-to-b
                 from-pink-300
@@ -32,13 +34,18 @@ export default function ContactMe() {
                 -mt-[22rem]
 
                 md:mt-0
+
+                lg:flex-row
                 '>
 
             <SectionTitle
-                title={'Contact Me'}
+                title={'Contact'}
             />
 
-            <UnderConstruction
+            <Links
+            />
+
+            <ContactForm
             />
 
         </section>

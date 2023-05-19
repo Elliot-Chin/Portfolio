@@ -65,13 +65,10 @@ a {
   &.green-shadow {
     box-shadow: 10px 15px 10px 0px rgba(0, 40, 0, 0.4);
   }
-}
 
-
-
-
-.glass-effect-orange {
-
+  &.red-shadow {
+    box-shadow: 10px 15px 10px 0px rgba(100,0,0, 0.4);
+  }
 }
 
 .force-opaque {
