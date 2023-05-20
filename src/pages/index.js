@@ -5,6 +5,7 @@ import { useState } from 'react'
 import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
 import ContactMe from '@/components/ContactMe'
+import MyLogo from '@/components/MyLogo'
 
 export default function Home() {
 
@@ -46,11 +47,18 @@ export default function Home() {
     />
   )
 
+  const LOGO = (
+    <MyLogo
+    />
+  )
+
 
 
   return (
     <div>
       <main>
+
+        {LOGO}
 
         {HEADER}
 

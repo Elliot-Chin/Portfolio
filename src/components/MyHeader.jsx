@@ -157,6 +157,8 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
     // Return ----------------------------------------------------------------
     return (
         <section
+            id='header'
+
             className='
             relative
             h-fit
