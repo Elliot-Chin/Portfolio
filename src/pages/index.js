@@ -14,7 +14,7 @@ export default function Home() {
   const [canScroll, setCanScroll] = useState(false)
   const [scrolled, setScrolled] = useState(true)
   const [shown, setShown] = useState(false)
-  const [visibleSectionID, setVisibleSectionID] = useState('')
+  const [visibleSectionID, setVisibleSectionID] = useState('Header')
 
   // Variables -----------------------------------------------------------------
 
@@ -42,10 +42,6 @@ export default function Home() {
       window.removeEventListener('scroll', handleScroll);
     }
   }, [])
-
-  useEffect(() => {
-    console.log(visibleSectionID)
-  }, [visibleSectionID])
 
   // Components ----------------------------------------------------------------
 
@@ -93,6 +89,7 @@ export default function Home() {
     <NavMenu
       shown={shown}
       setShown={setShown}
+      selectedID={visibleSectionID}
     />
   )
 

@@ -1,11 +1,13 @@
 import Hamburger from 'hamburger-react'
 import Image from 'next/image'
-import { useEffect } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 
-export default function NavMenu({ shown, setShown }) {
+export default function NavMenu({ selectedID, shown, setShown }) {
 
     // UseStates -----------------------------------------------------------------
+    const spanRefs = useRef([])
+    const [prevID, setPrevID] = useState('')
     // Variables -----------------------------------------------------------------
 
     const items = ['Header', 'About Me', 'Skills', 'Experience', 'Projects', 'Contact']
@@ -21,8 +23,6 @@ export default function NavMenu({ shown, setShown }) {
 
         const refEl = document.getElementById(id)
 
-        console.log(refEl)
-
         if (refEl) {
             window.scrollTo({
                 top: refEl.offsetTop,
@@ -35,26 +35,36 @@ export default function NavMenu({ shown, setShown }) {
     // UseEffect -----------------------------------------------------------------
 
     useEffect(() => {
-        console.log(shown)
-    }, [shown])
+        console.log(`This is ${selectedID}`)
+        if (prevID) {
+            spanRefs.current[prevID].style.borderBottom = 'none'
+            spanRefs.current[prevID].style.color = 'black'
+        }
+        spanRefs.current[selectedID].style.borderBottom = '1px solid rgb(31,41,55)'
+        spanRefs.current[selectedID].style.color = 'red'
+        setPrevID(selectedID)
+
+    }, [selectedID])
 
     // Components ----------------------------------------------------------------
     const MENU_ICON = (
         <div
-            className='
+            className={`
                 fixed
                 z-[51]
                 mt-5
                 left-2
+                transition
 
                 lg:left-5
-                '
+
+                
+                `}
         >
             <Hamburger
                 toggle={handleClick}
                 toggled={shown}
                 color={shown ? 'red' : 'black'}
-                size={33}
             />
         </div>
     )
@@ -67,9 +77,10 @@ export default function NavMenu({ shown, setShown }) {
                 w-full
                 flex
                 flex-row
-                mt-3
+                mt-16
+                overflow-scroll
 
-
+                md:mt-0
                 '
         >
 
@@ -104,26 +115,40 @@ export default function NavMenu({ shown, setShown }) {
     )
 
     const MENU_ITEMS = (
-        items.map((id, idx) => (
-            <span
-                key={idx}
-                onClick={() => handleScroll({ id: id })}
-                className='
+        <div
+            className='
+            flex
+            flex-col
+            overflow-scroll
+        '
+        >
+            {
+                items.map((id, idx) => (
+                    <span
+                        ref={(el) => (spanRefs.current[id] = el)}
+                        key={id}
+                        onClick={() => handleScroll({ id: id })}
+                        className='
                 font-bold
                 w-full
                 text-center
                 my-2
                 p-4
                 text-2xl
+                transition
+                duration-700
+                cursor-pointer
 
-                hover:cursor-pointer
-
+                hover:text-red-600
+                
                 md:text-3xl
                 '
-            >
-                {id}
-            </span>
-        ))
+                    >
+                        {id}
+                    </span>
+                ))
+            }
+        </div>
     )
 
     // Return --------------------------------------------------------------------
