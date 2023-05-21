@@ -163,7 +163,6 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
             sections
             relative
             h-[70rem]
-            border
             flex
             flex-col
             justify-center
