@@ -12,7 +12,7 @@ export default function MyLogo() {
 
     const scrollToTop = () => {
 
-        const refEl = document.getElementById('header')
+        const refEl = document.getElementById('Header')
 
         window.scrollTo({
             top: refEl.offsetTop,

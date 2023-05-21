@@ -465,7 +465,11 @@ export default function Projects() {
     // Return --------------------------------------------------------------------
     return (
         <section
+
+            id='Projects'
+
             className='
+                sections
                 isolate
                 h-fit
                 relative

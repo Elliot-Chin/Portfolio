@@ -106,7 +106,10 @@ export default function AboutMe() {
         <>
 
             <section
+                id='About me'
+
                 className='
+                sections
                 min-h-screen
                 relative
                 flex-wrap

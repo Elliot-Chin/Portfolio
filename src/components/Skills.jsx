@@ -21,7 +21,7 @@ export default function Skills() {
 
     const BTM_DIVIDER = (
         <div
-            className={`
+            className='
             absolute
             h-24
             bottom-0
@@ -35,15 +35,17 @@ export default function Skills() {
             before:bg-white-arrow-divider
             transform
             rotate-180
-            `
-            }
+            '
         />
     )
 
     // Return --------------------------------------------------------------------
     return (
         <section
-            className={`
+            id='skills'
+
+            className='
+            sections
             relative
             h-fit
             min-h-screen
@@ -52,8 +54,7 @@ export default function Skills() {
             to-blue-600
             pb-20
             pt-5
-            `
-            }
+            '
         >
             {TITLE}
 

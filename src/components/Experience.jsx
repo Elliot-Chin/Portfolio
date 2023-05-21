@@ -50,15 +50,18 @@ export default function Experience() {
 
     return (
         <section
-            className={`
+
+            id='Experience'
+
+            className='
+            sections
             relative
             h-fit
             -mt-10
             min-h-screen
             bg-white
             pb-28
-            `
-            }
+            '
         >
 
             {TITLE}
