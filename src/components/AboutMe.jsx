@@ -106,7 +106,7 @@ export default function AboutMe() {
         <>
 
             <section
-                id='About me'
+                id='About Me'
 
                 className='
                 sections

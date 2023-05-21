@@ -3,7 +3,7 @@ import Tilt from "react-parallax-tilt"
 
 
 
-export default function MyLogo() {
+export default function MyLogo({ visible }) {
     // UseStates -----------------------------------------------------------------
 
     // Variables -----------------------------------------------------------------
@@ -46,18 +46,21 @@ export default function MyLogo() {
                 gyroscope={true}
                 tiltAxis="y"
             >
-                <Image
-                    src={'/images/EC.jpg'}
-                    width={80}
-                    height={80}
+                {
+                    !visible && (<Image
+                        src={'/images/EC.jpg'}
+                        width={80}
+                        height={80}
 
-                    className='
+                        className='
+    
+                        md:w-[100px]
+    
+                        lg:w-[120px]
+                    '
+                    />)
+                }
 
-                    md:w-[100px]
-
-                    lg:w-[120px]
-                '
-                />
             </Tilt>
         </div>
     )

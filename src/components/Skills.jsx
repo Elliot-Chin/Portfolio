@@ -42,7 +42,7 @@ export default function Skills() {
     // Return --------------------------------------------------------------------
     return (
         <section
-            id='skills'
+            id='Skills'
 
             className='
             sections

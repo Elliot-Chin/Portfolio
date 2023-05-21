@@ -135,7 +135,7 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
         <div
             className={`
             absolute
-            h-24
+            h-96
             -bottom-1
             w-full
 
@@ -162,11 +162,13 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
             className='
             sections
             relative
-            h-fit
-            min-h-screen
+            h-[70rem]
+            border
             flex
             flex-col
             justify-center
+            bg-cover
+            bg-no-repeat
             bg-[url("/images/headerBG.png")]
             bg-blend-soft-light
             '>

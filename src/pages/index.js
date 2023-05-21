@@ -6,12 +6,14 @@ import Experience from '@/components/Experience'
 import Projects from '@/components/Projects'
 import ContactMe from '@/components/ContactMe'
 import MyLogo from '@/components/MyLogo'
+import NavMenu from '@/components/NavMenu'
 
 export default function Home() {
 
   // UseStates -----------------------------------------------------------------
   const [canScroll, setCanScroll] = useState(false)
   const [scrolled, setScrolled] = useState(true)
+  const [shown, setShown] = useState(false)
   const [visibleSectionID, setVisibleSectionID] = useState('')
 
   // Variables -----------------------------------------------------------------
@@ -83,10 +85,18 @@ export default function Home() {
 
   const LOGO = (
     <MyLogo
+    visible={shown}
     />
   )
 
-  
+  const NAV = (
+    <NavMenu
+      shown={shown}
+      setShown={setShown}
+    />
+  )
+
+
 
 
   // Return --------------------------------------------------------------------
@@ -96,6 +106,8 @@ export default function Home() {
       <main>
 
         {LOGO}
+
+        {NAV}
 
         {HEADER}
 
