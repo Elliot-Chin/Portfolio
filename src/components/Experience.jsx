@@ -1,8 +1,7 @@
 
-import { VerticalTimeline } from "react-vertical-timeline-component"
 import SectionTitle from "./SubComponents/SectionTitle"
-import VTElement from "./SubComponents/VTElement"
 import Experiences from "../../public/data/MyExperiences"
+import ExperienceCard from './ExperienceCard'
 
 
 export default function Experience() {
@@ -68,37 +67,39 @@ export default function Experience() {
 
             <div
                 className="
-                mt-10
+                flex
+                flex-col
+                flex-wrap
+                h-fit
+                my-10
+                gap-10
+                p-10
+                justify-center
+                items-center
 
-                md:mb-15
-
-                lg:mb-36
+                md:flex-row
 
                 lg:mt-15
             "
             >
-                <VerticalTimeline
-                    lineColor="rgb(31,41,55)"
-                    animate={false}
-                >
 
-                    {
-                        Experiences.map(({ duration, imgSrc, imgAlt, position, location, desc, buttons, buttonFuncs, skills }, i) => (
-                            <VTElement
-                                duration={duration}
-                                imgSrc={imgSrc}
-                                imgAlt={imgAlt}
-                                position={position}
-                                location={location}
-                                desc={desc}
-                                buttons={buttons}
-                                buttonFuncs={buttonFuncs}
-                                skills={skills}
-                                key={i}
-                            />
-                        ))
-                    }
-                </VerticalTimeline>
+                {
+                    Experiences.map(({ duration, imgSrc, imgAlt, position, location, desc, buttons, buttonFuncs, skills }, i) => (
+                        <ExperienceCard
+                            duration={duration}
+                            imgSrc={imgSrc}
+                            imgAlt={imgAlt}
+                            position={position}
+                            location={location}
+                            desc={desc}
+                            buttons={buttons}
+                            buttonFuncs={buttonFuncs}
+                            skills={skills}
+                            key={i}
+                        />
+                    ))
+                }
+
             </div>
 
             {BTM_DIVIDER}

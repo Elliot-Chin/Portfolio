@@ -74,7 +74,6 @@ export default function NavMenu({ selectedID, shown, setShown }) {
                 flex
                 flex-row
                 mt-16
-                overflow-scroll
 
                 md:mt-0
                 '
@@ -116,7 +115,7 @@ export default function NavMenu({ selectedID, shown, setShown }) {
             className='
             flex
             flex-col
-            overflow-scroll
+            overflow-auto
         '
         >
             {

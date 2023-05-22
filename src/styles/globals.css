@@ -11,7 +11,7 @@
 }
 
 ::-webkit-scrollbar {
-    display: none !important;
+    display: none;
 }
 
 a {
@@ -37,7 +37,7 @@ a {
 }
 
 .glass-effect {
-  box-shadow: 10px 15px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 7px 5px 0px rgba(0, 0, 0, 0.4);
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -121,4 +121,32 @@ a {
      calc(100% - var(--depth)) 100%, 
      0% 100%
    );
+}
+
+.flip {
+  perspective: 600px;  
+}
+
+.flip-content {
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+}
+
+.flip:hover .flip-content {
+  transform: rotateY(180deg);
+  transition: transform 0.3s;
+}
+
+.flip-front, .flip-back {
+  backface-visibility: hidden;  
+  box-shadow: 6px 6px rgba(147,51,234, 0.4);
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+  box-shadow: 6px 6px rgba(217,119,6,0.4);
+}
+
+.visibleScroll::-webkit-scrollbar {
+  display: auto !important;
 }
