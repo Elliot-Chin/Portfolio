@@ -1,10 +1,20 @@
-import UnderConstruction from "./SubComponents/UnderConstruction";
-
-
+import MyLinks from "../../public/data/MyLinks"
 
 
 export default function Links() {
 
+
+    // UseStates -----------------------------------------------------------------
+
+    // Variables -----------------------------------------------------------------
+
+    // Util funcs ----------------------------------------------------------------
+
+    // UseEffect -----------------------------------------------------------------
+
+    // Components ----------------------------------------------------------------
+
+    // Return --------------------------------------------------------------------
     return (
         <div
             className='
@@ -39,19 +49,55 @@ export default function Links() {
                 Social Links
             </h1>
 
-            <UnderConstruction />
+
+            <div
+                className='
+                flex
+                flex-col
+                items-center
+                pb-16
+                justify-around
+                my-auto
+                h-full
+                '
+            >
+
+                {
+                    MyLinks.map((link, idx) => (
+                        <span
+                            key={idx}
+                            className='
+                            hover-2
+                            p-4
+                            w-5/6
+                            text-3xl
+                            text-center
+                            font-montserrat
+                            m-3
+                            gap-5
+                            flex
+                            cursor-pointer
+
+                            md:text-4xl
+                            md:justify-center
+
+                            '
+                            onClick={link.onClick}
+                        >
+                            {link.icon}
+                            {link.display}
+                        </span>
+                    ))
+                }
+
+
+            </div>
+
+
+
+
+
+
         </div>
     )
-    // UseStates -----------------------------------------------------------------
-
-    // Variables -----------------------------------------------------------------
-
-    // Util funcs ----------------------------------------------------------------
-
-    // UseEffect -----------------------------------------------------------------
-
-    // Components ----------------------------------------------------------------
-
-    // Return --------------------------------------------------------------------
-
 }
