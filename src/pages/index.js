@@ -14,7 +14,7 @@ export default function Home() {
   const [canScroll, setCanScroll] = useState(false)
   const [scrolled, setScrolled] = useState(true)
   const [shown, setShown] = useState(false)
-  const [visibleSectionID, setVisibleSectionID] = useState('Header')
+  const [visibleSectionID, setVisibleSectionID] = useState('Home')
 
   // Variables -----------------------------------------------------------------
 

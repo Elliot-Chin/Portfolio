@@ -158,7 +158,7 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
     // Return ----------------------------------------------------------------
     return (
         <section
-            id='Header'
+            id='Home'
 
             className='
             sections

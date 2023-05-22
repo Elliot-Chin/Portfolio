@@ -74,3 +74,12 @@ a {
 .force-opaque {
   opacity: 1 !important;
 }
+
+.hover-style {
+  color: red;
+}
+
+.selected-style {
+  border-bottom: solid 1px #b4b4b4;
+  color: red;
+}

@@ -12,7 +12,7 @@ export default function MyLogo({ visible }) {
 
     const scrollToTop = () => {
 
-        const refEl = document.getElementById('Header')
+        const refEl = document.getElementById('Home')
 
         window.scrollTo({
             top: refEl.offsetTop,
@@ -51,6 +51,7 @@ export default function MyLogo({ visible }) {
                         src={'/images/EC.jpg'}
                         width={80}
                         height={80}
+                        alt='Logo'
 
                         className='
     

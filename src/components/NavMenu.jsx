@@ -7,10 +7,10 @@ export default function NavMenu({ selectedID, shown, setShown }) {
 
     // UseStates -----------------------------------------------------------------
     const spanRefs = useRef([])
-    const [prevID, setPrevID] = useState('')
+    const [prevID, setPrevID] = useState('Home')
     // Variables -----------------------------------------------------------------
 
-    const items = ['Header', 'About Me', 'Skills', 'Experience', 'Projects', 'Contact']
+    const items = ['Home', 'About Me', 'Skills', 'Experience', 'Projects', 'Contact']
 
     // Util funcs ----------------------------------------------------------------
     const handleClick = () => {
@@ -35,13 +35,9 @@ export default function NavMenu({ selectedID, shown, setShown }) {
     // UseEffect -----------------------------------------------------------------
 
     useEffect(() => {
-        console.log(`This is ${selectedID}`)
-        if (prevID) {
-            spanRefs.current[prevID].style.borderBottom = 'none'
-            spanRefs.current[prevID].style.color = 'black'
-        }
-        spanRefs.current[selectedID].style.borderBottom = '1px solid rgb(31,41,55)'
-        spanRefs.current[selectedID].style.color = 'red'
+
+        spanRefs.current[prevID].classList.remove('selected-style')
+        spanRefs.current[selectedID].classList.add('selected-style')
         setPrevID(selectedID)
 
     }, [selectedID])
@@ -90,6 +86,7 @@ export default function NavMenu({ selectedID, shown, setShown }) {
                 width={50}
                 alt='Logo'
                 unoptimized
+                priority
 
                 className='
 
@@ -127,22 +124,25 @@ export default function NavMenu({ selectedID, shown, setShown }) {
                     <span
                         ref={(el) => (spanRefs.current[id] = el)}
                         key={id}
+                        name={id}
                         onClick={() => handleScroll({ id: id })}
+                        onMouseEnter={() => spanRefs.current[id].classList.add('hover-style')}
+                        onMouseLeave={() => spanRefs.current[id].classList.remove('hover-style')}
                         className='
-                font-bold
-                w-full
-                text-center
-                my-2
-                p-4
-                text-2xl
-                transition
-                duration-700
-                cursor-pointer
-
-                hover:text-red-600
-                
-                md:text-3xl
-                '
+                        font-bold
+                        w-full
+                        text-center
+                        my-2
+                        p-4
+                        text-2xl
+                        transition
+                        duration-700
+                        cursor-pointer
+                        
+                        hover:text-red-600
+                        
+                        md:text-3xl
+                        '
                     >
                         {id}
                     </span>
