@@ -51,13 +51,14 @@ export default function ScrollIcon({ strokeColor, text }) {
     return (
         <div
             className="
-            absolute
+            fixed
             w-fit
             flex
             flex-col
             justify-center
-            top-3/4
+            top-2/3
             left-1/2
+            transform
             -translate-x-1/2
             "
         >

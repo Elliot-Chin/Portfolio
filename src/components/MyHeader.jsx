@@ -92,6 +92,7 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
             font-montserrat
             text-5xl
             text-center
+            mt-80
 
             md:text-7xl
             md:text-gray-800
@@ -165,7 +166,6 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
             h-[70rem]
             flex
             flex-col
-            justify-center
             bg-cover
             bg-no-repeat
             bg-[url("/images/headerBG.png")]
