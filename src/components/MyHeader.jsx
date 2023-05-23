@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { sleep } from '@/utils/myUtils'
 import ScrollIcon from './SubComponents/ScrollIcon'
+import SectionDivider from './SubComponents/SectionDivider'
 
 export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolled }) {
 
@@ -133,24 +134,11 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
     )
 
     const BTM_DIVIDER = (
-        <div
-            className={`
-            absolute
-            h-96
-            -bottom-1
-            w-full
 
-            before:absolute
-            before:pointer-events-none
-            before:h-full
-            before:w-full
-            before:bg-no-repeat
-            before:bg-yellow-hex-divider
-            transform
-            rotate-180
-            `
-            }
+        <SectionDivider
+            color={'#f97316'}
         />
+
     )
 
 

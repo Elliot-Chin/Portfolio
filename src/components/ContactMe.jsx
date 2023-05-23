@@ -35,12 +35,10 @@ export default function ContactMe() {
                 bg-gradient-to-b
                 from-amber-500
                 to-yellow-700
-                -mt-[22rem]
-
-                md:mt-0
 
                 lg:flex-row
                 '>
+
 
             <SectionTitle
                 title={'Contact'}

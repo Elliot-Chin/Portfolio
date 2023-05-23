@@ -1,6 +1,7 @@
 import SkillCard from "./SubComponents/SkillCard"
 import MySkills from "../../public/data/MySkills"
 import SectionTitle from "./SubComponents/SectionTitle"
+import SectionDivider from "./SubComponents/SectionDivider"
 
 export default function Skills() {
 
@@ -20,22 +21,8 @@ export default function Skills() {
     )
 
     const BTM_DIVIDER = (
-        <div
-            className='
-            absolute
-            h-24
-            bottom-0
-            w-full
-
-            before:absolute
-            before:pointer-events-none
-            before:h-full
-            before:w-full
-            before:bg-no-repeat
-            before:bg-white-arrow-divider
-            transform
-            rotate-180
-            '
+        <SectionDivider
+            color={'white'}
         />
     )
 
@@ -49,9 +36,7 @@ export default function Skills() {
             relative
             h-fit
             min-h-screen
-            bg-gradient-to-b
-            from-blue-950
-            to-blue-600
+            bg-blue-600
             pb-20
             pt-5
             '

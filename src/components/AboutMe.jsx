@@ -2,6 +2,7 @@ import AvatarBase from "./models/AvatarBase"
 import AboutMeIntro from "../../public/data/AboutMeIntro"
 import { useEffect, useState } from "react"
 import SectionTitle from "./SubComponents/SectionTitle"
+import SectionDivider from "./SubComponents/SectionDivider"
 
 
 export default function AboutMe() {
@@ -81,24 +82,8 @@ export default function AboutMe() {
     )
 
     const BTM_DIVIDER = (
-        <div
-            className={`
-        absolute
-        h-24
-        -bottom-1
-        w-full
-
-        before:absolute
-        before:pointer-events-none
-        before:h-full
-        before:w-full
-        before:bg-no-repeat
-        before:bg-blue-book-divider
-        transform
-        rotate-180
-        `
-            }
-        />
+        <SectionDivider
+            color={'rgb(37,99,235)'} />
     )
 
     // Return --------------------------------------------------------------------
@@ -118,8 +103,8 @@ export default function AboutMe() {
                 flex-col
                 justify-center
                 bg-gradient-to-b
-                from-yellow-400
-                to-orange-600
+                from-orange-500
+                to-amber-600
                 '>
 
                 {TITLE}

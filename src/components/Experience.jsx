@@ -2,6 +2,7 @@
 import SectionTitle from "./SubComponents/SectionTitle"
 import Experiences from "../../public/data/MyExperiences"
 import ExperienceCard from './ExperienceCard'
+import SectionDivider from "./SubComponents/SectionDivider"
 
 
 export default function Experience() {
@@ -26,23 +27,8 @@ export default function Experience() {
     )
 
     const BTM_DIVIDER = (
-        <div
-            className={`
-        absolute
-        h-24
-        -bottom-1
-        w-full
-
-        before:absolute
-        before:pointer-events-none
-        before:h-full
-        before:w-full
-        before:bg-no-repeat
-        before:bg-green-skew-divider
-        transform
-        rotate-180
-        `
-            }
+        <SectionDivider
+            color={'rgb(20,83,45)'}
         />
     )
     // Return --------------------------------------------------------------------
