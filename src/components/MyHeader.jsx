@@ -127,7 +127,7 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
         !scrolled && (
             <ScrollIcon
                 text={`Scroll`}
-                strokeColor={`#111827`}
+                strokeColor={`white`}
             />
         )
     )

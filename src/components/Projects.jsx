@@ -62,14 +62,14 @@ export default function Projects() {
                         {icon}
                         <span
                             className='
-                    text-white
-                    text-lg
-                    px-2
-                    mt-2
-                    w-24
-                    text-center
+                        text-white
+                        text-lg
+                        px-2
+                        mt-2
+                        w-24
+                        text-center
 
-                    md:text-lg
+                        md:text-lg
                     '
                         >
                             {bn}
@@ -203,17 +203,18 @@ export default function Projects() {
             className={`
             absolute
             h-24
-            bottom-[22rem]
+            mb-10
+            bottom-[19rem]
             w-full
 
-            md:bottom-0
+            md:-bottom-10
 
             before:absolute
             before:pointer-events-none
             before:h-full
             before:w-full
             before:bg-no-repeat
-            before:bg-pink-diamond-divider
+            before:bg-orange-layered-divider
             transform
             rotate-180
             `

@@ -60,7 +60,7 @@ export default function NavMenu({ selectedID, shown, setShown }) {
             <Hamburger
                 toggle={handleClick}
                 toggled={shown}
-                color={shown ? 'red' : 'black'}
+                color={shown ? 'red' : selectedID == 'Experience' ? 'black' : 'white'}
             />
         </div>
     )
@@ -96,13 +96,14 @@ export default function NavMenu({ selectedID, shown, setShown }) {
             />
 
             <h1
-                className='
+                className={`
                 font-montserrat
                 m-5
                 text-4xl
+                ${selectedID == 'Experience' ? 'text-black' : 'text-white'}
 
                 md:text-6xl
-                '
+                `}
             >
                 Menu
             </h1>
@@ -127,7 +128,7 @@ export default function NavMenu({ selectedID, shown, setShown }) {
                         onClick={() => handleScroll({ id: id })}
                         onMouseEnter={() => spanRefs.current[id].classList.add('hover-style')}
                         onMouseLeave={() => spanRefs.current[id].classList.remove('hover-style')}
-                        className='
+                        className={`
                         font-bold
                         w-full
                         text-center
@@ -137,11 +138,13 @@ export default function NavMenu({ selectedID, shown, setShown }) {
                         transition
                         duration-700
                         cursor-pointer
-                        
+                        ${selectedID == 'Experience' ? 'text-black' : 'text-white'}
+                        rounded-40
+
                         hover:text-red-600
-                        
+
                         md:text-3xl
-                        '
+                        `}
                     >
                         {id}
                     </span>

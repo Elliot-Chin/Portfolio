@@ -19,7 +19,7 @@ export default function Links() {
         <div
             className='
             glass-effect
-            red-shadow
+            brown-shadow
             rounded-40
             h-[40rem]
             w-5/6

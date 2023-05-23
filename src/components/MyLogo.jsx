@@ -49,9 +49,11 @@ export default function MyLogo({ visible }) {
                 {
                     !visible && (<Image
                         src={'/images/EC.jpg'}
-                        width={80}
-                        height={80}
+                        width={0}
+                        height={0}
                         alt='Logo'
+                        unoptimized
+                        priority
 
                         className='
     

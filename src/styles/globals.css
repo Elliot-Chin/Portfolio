@@ -43,31 +43,31 @@ a {
   -webkit-backdrop-filter: blur(20px);
 
   &.white-shadow {
-    box-shadow: 10px 15px 10px 0px rgba(255, 255, 255, 0.4);
+    box-shadow: 8px 8px 3px 0px rgba(255, 255, 255, 0.4);
   }
 
   &.blue-shadow {
-    box-shadow: 10px 15px 10px 0px rgba(0, 0, 128, 0.4);
+    box-shadow: 8px 8px 3px 0px rgba(0, 0, 128, 0.4);
   }
 
   &.orange-shadow {
-    box-shadow: 10px 15px 10px 0px rgba(153, 92, 0, 0.4);
+    box-shadow: 8px 8px 3px 0px rgba(153, 92, 0, 0.4);
   }
 
   &.purple-shadow {
-    box-shadow: 10px 15px 10px 0px rgba(102, 0, 51, 0.4);
+    box-shadow: 8px 8px 3px 0px rgba(102, 0, 51, 0.4);
   }
 
   &.dark-green-shadow {
-    box-shadow: 10px 15px 10px 0px rgba(0, 26, 0, 0.4);
+    box-shadow: 8px 8px 3px 0px rgba(0, 26, 0, 0.4);
   }
 
   &.green-shadow {
-    box-shadow: 10px 15px 10px 0px rgba(0, 40, 0, 0.4);
+    box-shadow: 8px 8px 3px 0px rgba(0, 40, 0, 0.4);
   }
 
-  &.red-shadow {
-    box-shadow: 10px 15px 10px 0px rgba(100,0,0, 0.4);
+  &.brown-shadow {
+    box-shadow: 8px 8px 3px 0px rgb(77, 46, 0, 0.4);
   }
 }
 
@@ -79,13 +79,8 @@ a {
   color: red;
 }
 
-.selected-style {
-  border-bottom: solid 1px #b4b4b4;
-  color: red;
-}
-
 .hover-2 {
-  --color: rgb(185,28,28); /* the color */
+  --color:#4d2e00; /* the color */
   --b-length: 3px;    /* border length*/
   --depth: 15px;    /* the cube depth */
   --_s: calc(var(--depth) + var(--b-length));
@@ -149,4 +144,9 @@ a {
 
 .visibleScroll::-webkit-scrollbar {
   display: auto !important;
+}
+
+.selected-style {
+  position:relative;
+  border:dashed 3px orange;
 }

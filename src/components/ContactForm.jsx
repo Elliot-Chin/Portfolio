@@ -75,7 +75,7 @@ export default function ContactForm() {
                     rounded-40
                     bg-transparent
                     border-2
-                    border-red-400
+                    border-[#4d2e00]
                     mb-5
                     h-12
                     w-10/12
@@ -88,7 +88,7 @@ export default function ContactForm() {
 
                     focus:border-4
                     focus:placeholder-transparent
-                    focus:border-red-500
+                    focus:border-[#4d2e00]
 
                     md:text-2xl
                     '
@@ -137,14 +137,14 @@ export default function ContactForm() {
                     py-3
                     text-xl
                     text-white
-                    border-red-400
+                    border-[#4d2e00]
                     focus:placeholder-transparent
 
                     placeholder:text-white
                     placeholder:italic
 
                     focus:border-4
-                    focus:border-red-500
+                    focus:border-[#4d2e00]
 
                     lg:text-2xl
 
@@ -168,11 +168,11 @@ export default function ContactForm() {
                     <AwesomeButton
                         type='secondary'
                         style={{
-                            '--button-secondary-color': '#2f0d15',
+                            '--button-secondary-color': '#4d2e00',
                             "--button-secondary-color-dark": "transparent",
-                            "--button-secondary-color-light": "#f1f1f1",
-                            '--button-secondary-color-hover': '#ff4d4d',
-                            '--button-secondary-color-active': '#ff4d4d',
+                            "--button-secondary-color-light": "white",
+                            '--button-secondary-color-hover': '#b36b00',
+                            '--button-secondary-color-active': '#b36b00',
                             '--button-secondary-border': '0px solid #acc3d7',
                             '--button-default-border-radius': '40px',
                             '--button-raise-level': '6px',
@@ -240,7 +240,7 @@ export default function ContactForm() {
         <div
             className='
             glass-effect
-            red-shadow
+            brown-shadow
             rounded-40
             h-[38rem]
             w-5/6

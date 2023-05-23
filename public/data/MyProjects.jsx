@@ -17,7 +17,7 @@ const MyProjects = {
         buttons: [
             {
                 bn: "Github",
-                icon: <BsGithub color='white' size={'calc(90% - 20px)'} />,
+                icon: <BsGithub color='white' size={50} />,
                 func: () => { window.open('https://github.com/Elliot-Chin/StudentTrackingSystem-1') },
             },
         ]
@@ -43,17 +43,17 @@ const MyProjects = {
         buttons: [
             {
                 bn: "Github",
-                icon: <BsGithub color='white' size={'calc(80% - 20px)'} />,
+                icon: <BsGithub color='white' size={50}/>,
                 func: () => { window.open('https://github.com/edwardchang7/engg4000') },
             },
             {
-                bn: "Youtube",
-                icon: <BsYoutube color='white' size={'calc(80% - 20px)'} />,
+                bn: "Example",
+                icon: <BsYoutube color='white' size={50}/>,
                 func: () => { window.open('https://youtu.be/sYTcTymlJhc') },
             },
             {
                 bn: "CBC News",
-                icon: <BsNewspaper color='white' size={'calc(80% - 20px)'} />,
+                icon: <BsNewspaper color='white' size={50}/>,
                 func: () => { window.open('https://www.cbc.ca/news/canada/new-brunswick/unb-engineering-design-symposium-1.6411721') }
                 ,
             },
@@ -74,7 +74,7 @@ const MyProjects = {
         buttons: [
             {
                 bn: "Github",
-                icon: <BsGithub color='white' size={'calc(80% - 20px)'} />,
+                icon: <BsGithub color='white' size={50} />,
                 func: () => { window.open('https://github.com/Elliot-Chin/Portfolio') },
             },
         ]

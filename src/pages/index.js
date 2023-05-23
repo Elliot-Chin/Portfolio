@@ -27,8 +27,8 @@ export default function Home() {
       const elements = document.querySelectorAll('.sections')
 
       elements.forEach((element) => {
-        const { top, bottom } = element.getBoundingClientRect();
-        const isVisible = top < window.innerHeight && bottom >= 0;
+        const { top, bottom } = element.getBoundingClientRect()
+        const isVisible = top < window.innerHeight - 800 && bottom >= 0;
 
         if (isVisible) {
           setVisibleSectionID(element.id)

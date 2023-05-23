@@ -33,8 +33,8 @@ export default function ContactMe() {
                 gap-y-10
                 pb-10
                 bg-gradient-to-b
-                from-pink-300
-                to-red-900
+                from-amber-500
+                to-yellow-700
                 -mt-[22rem]
 
                 md:mt-0
