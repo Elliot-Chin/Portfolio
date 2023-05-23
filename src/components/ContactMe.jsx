@@ -32,9 +32,7 @@ export default function ContactMe() {
                 flex-col
                 gap-y-10
                 pb-10
-                bg-gradient-to-b
-                from-amber-500
-                to-yellow-700
+                bg-purple-500
 
                 lg:flex-row
                 '>

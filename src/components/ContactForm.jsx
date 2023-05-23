@@ -75,7 +75,7 @@ export default function ContactForm() {
                     rounded-40
                     bg-transparent
                     border-2
-                    border-[#4d2e00]
+                    border-[rgb(59,7,100)]
                     mb-5
                     h-12
                     w-10/12
@@ -88,7 +88,6 @@ export default function ContactForm() {
 
                     focus:border-4
                     focus:placeholder-transparent
-                    focus:border-[#4d2e00]
 
                     md:text-2xl
                     '
@@ -137,14 +136,13 @@ export default function ContactForm() {
                     py-3
                     text-xl
                     text-white
-                    border-[#4d2e00]
+                    border-[rgb(59,7,100)]
                     focus:placeholder-transparent
 
                     placeholder:text-white
                     placeholder:italic
 
                     focus:border-4
-                    focus:border-[#4d2e00]
 
                     lg:text-2xl
 
@@ -156,7 +154,7 @@ export default function ContactForm() {
                     <ConfigProvider
                         theme={{
                             token: {
-                                colorPrimary: 'orange',
+                                colorPrimary: 'rgb(59,7,100)',
                                 controlHeight: '70',
                             }
                         }}
@@ -168,11 +166,11 @@ export default function ContactForm() {
                     <AwesomeButton
                         type='secondary'
                         style={{
-                            '--button-secondary-color': '#4d2e00',
+                            '--button-secondary-color': 'rgb(59,7,100)',
                             "--button-secondary-color-dark": "transparent",
                             "--button-secondary-color-light": "white",
-                            '--button-secondary-color-hover': '#b36b00',
-                            '--button-secondary-color-active': '#b36b00',
+                            '--button-secondary-color-hover': 'rgb(168,85,247)',
+                            '--button-secondary-color-active': 'rgb(168,85,247)',
                             '--button-secondary-border': '0px solid #acc3d7',
                             '--button-default-border-radius': '40px',
                             '--button-raise-level': '6px',
@@ -209,11 +207,11 @@ export default function ContactForm() {
             <AwesomeButton
                 type='secondary'
                 style={{
-                    '--button-secondary-color': '#2f0d15',
+                    '--button-secondary-color': 'rgb(59,7,100)',
                     "--button-secondary-color-dark": "transparent",
                     "--button-secondary-color-light": "#f1f1f1",
-                    '--button-secondary-color-hover': '#ff4d4d',
-                    '--button-secondary-color-active': '#ff4d4d',
+                    '--button-secondary-color-hover': 'rgb(168,85,247)',
+                    '--button-secondary-color-active': 'rgb(168,85,247)',
                     '--button-secondary-border': '0px solid #acc3d7',
                     '--button-default-border-radius': '40px',
                     '--button-raise-level': '6px',

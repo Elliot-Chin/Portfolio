@@ -52,7 +52,7 @@ export default function ExperienceCard({ duration, position, location, skills, d
                         p-5
                         bg-white
                         border-4
-                        border-purple-600
+                        border-green-500
                     '
                     >
 
@@ -167,7 +167,7 @@ export default function ExperienceCard({ duration, position, location, skills, d
                         p-5
                         bg-white
                         border-4
-                        border-amber-600
+                        border-red-400
                         flex
                         flex-col
                     '
@@ -189,7 +189,7 @@ export default function ExperienceCard({ duration, position, location, skills, d
                             py-3
                             h-${buttons.length > 0 ? '5/6' : 'full'}
                             scrollbar-thin
-                            scrollbar-thumb-amber-600
+                            scrollbar-thumb-red-600
                             overflow-scroll
                             whitespace-pre-line
 
@@ -212,11 +212,11 @@ export default function ExperienceCard({ duration, position, location, skills, d
                                         key={index}
                                         type='secondary'
                                         style={{
-                                            '--button-secondary-color': '#37013d',
+                                            '--button-secondary-color': 'rgb(34,197,94)',
                                             '--button-secondary-color-dark': 'dark-gray',
                                             '--button-secondary-color-light': 'white',
-                                            '--button-secondary-color-hover': '#da48ea',
-                                            '--button-secondary-color-active': '#da48ea',
+                                            '--button-secondary-color-hover': 'rgb(5,46,22)',
+                                            '--button-secondary-color-active': 'rgb(5,46,22)',
                                             '--button-secondary-border': '0px',
                                             '--button-default-border-radius': '40px',
                                             '--button-raise-level': '6px',

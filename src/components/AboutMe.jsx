@@ -83,7 +83,7 @@ export default function AboutMe() {
 
     const BTM_DIVIDER = (
         <SectionDivider
-            color={'rgb(37,99,235)'} />
+            color={'#3399ff'} />
     )
 
     // Return --------------------------------------------------------------------
@@ -102,9 +102,7 @@ export default function AboutMe() {
                 gap-5
                 flex-col
                 justify-center
-                bg-gradient-to-b
-                from-orange-500
-                to-amber-600
+                bg-orange-400
                 '>
 
                 {TITLE}

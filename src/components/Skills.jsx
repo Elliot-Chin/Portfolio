@@ -36,7 +36,7 @@ export default function Skills() {
             relative
             h-fit
             min-h-screen
-            bg-blue-600
+            bg-[#3399ff]
             pb-20
             pt-5
             '

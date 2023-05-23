@@ -136,7 +136,7 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
     const BTM_DIVIDER = (
 
         <SectionDivider
-            color={'#f97316'}
+            color={'rgb(251,146,60 )'}
         />
 
     )
