@@ -116,6 +116,8 @@ export default function NavMenu({ selectedID, shown, setShown }) {
             className='
             flex
             flex-col
+            items-center
+            w-full
             overflow-auto
         '
         >
@@ -130,16 +132,15 @@ export default function NavMenu({ selectedID, shown, setShown }) {
                         onMouseLeave={() => spanRefs.current[id].classList.remove('hover-style')}
                         className={`
                         font-bold
-                        w-full
-                        text-center
-                        my-2
-                        p-4
+                        w-fit
+                        my-4
+                        px-4
+                        py-2
                         text-2xl
                         transition
                         duration-700
                         cursor-pointer
                         ${selectedID == 'Experience' ? 'text-black' : 'text-white'}
-                        rounded-40
 
                         hover:text-red-600
 

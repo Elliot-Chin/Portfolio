@@ -146,9 +146,38 @@ a {
   display: auto !important;
 }
 
+
 .selected-style {
-  position:relative;
-  border:dashed 3px orange;
+  position: relative;
+  --bc: red;
+  --br: 5px;
+  --width: 30px;
+  --height: 30px;
+}
+
+.selected-style:before {
+  position: absolute;
+  content: "";
+  width: var(--width);
+  height: var(--height);
+  top: -2px;
+  left: 0px;
+  z-index:1;
+  border-radius: var(--br) 0 0 0;
+  border-left: 3px dashed var(--bc);
+  border-top: 3px solid var(--bc);
+}
+.selected-style:after {
+  position: absolute;
+  content: "";
+  width: var(--width);
+  height: var(--height);
+  bottom: -2px;
+  right: 0px;
+  z-index:1;
+  border-radius: 0 0 var(--br) 0;
+  border-right: 3px dashed var(--bc);
+  border-bottom: 3px solid var(--bc);
 }
 
 .section-divider {
