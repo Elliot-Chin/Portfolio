@@ -67,19 +67,27 @@ export default function Links() {
                         <span
                             key={idx}
                             className='
-                            hover-2
-                            p-4
-                            w-5/6
-                            text-3xl
-                            text-center
+                            btn-hover
+                            w-2/3
                             font-montserrat
-                            m-3
-                            gap-5
-                            flex
                             cursor-pointer
+                            h-16
+                            rounded-40
+                            text-white
+                            text-xl
+                            flex
+                            items-center
+                            justify-center
+                            gap-5
+                            transition-all
+                            duration-500
+                            ease-in-out
+                            purple-button
+                            outline-none
 
-                            md:text-4xl
-                            md:justify-center
+                            md:text-2xl
+
+                            lg:text-3xl
 
                             '
                             onClick={link.onClick}
