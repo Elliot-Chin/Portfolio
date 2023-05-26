@@ -6,7 +6,6 @@ export default function Links() {
 
 
     // UseStates -----------------------------------------------------------------
-    const [hoverDirection, setHoverDirection] = useState(true)
     const [cName, setCName] = useState('__left')
 
     // Variables -----------------------------------------------------------------
@@ -19,11 +18,6 @@ export default function Links() {
 
         setCName(clientX < spanCenterX ? '__left' : '__right')
 
-        if (clientX < spanCenterX) {
-            setHoverDirection(true)
-        } else {
-            setHoverDirection(false)
-        }
     }
 
     // UseEffect -----------------------------------------------------------------
