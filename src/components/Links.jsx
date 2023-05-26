@@ -1,3 +1,4 @@
+import { useState } from "react"
 import MyLinks from "../../public/data/MyLinks"
 
 
@@ -5,10 +6,25 @@ export default function Links() {
 
 
     // UseStates -----------------------------------------------------------------
+    const [hoverDirection, setHoverDirection] = useState(true)
+    const [cName, setCName] = useState('__left')
 
     // Variables -----------------------------------------------------------------
 
     // Util funcs ----------------------------------------------------------------
+    const handleMouseEnter = (event) => {
+        const { clientX } = event
+        const spanRect = event.target.getBoundingClientRect()
+        const spanCenterX = spanRect.left + spanRect.width / 2
+
+        setCName(clientX < spanCenterX ? '__left' : '__right')
+
+        if (clientX < spanCenterX) {
+            setHoverDirection(true)
+        } else {
+            setHoverDirection(false)
+        }
+    }
 
     // UseEffect -----------------------------------------------------------------
 
@@ -66,45 +82,51 @@ export default function Links() {
                     MyLinks.map((link, idx) => (
                         <span
                             key={idx}
-                            className='
+                            className={`
                             btn-hover
+                            relative
                             w-2/3
-                            font-montserrat
                             cursor-pointer
                             h-16
                             rounded-40
-                            text-white
                             text-xl
                             flex
                             items-center
+                            overflow-hidden
+                            z-10
                             justify-center
-                            gap-5
-                            transition-all
-                            duration-500
-                            ease-in-out
-                            purple-button
                             outline-none
+
+                            ${cName}
 
                             md:text-2xl
 
                             lg:text-3xl
-
-                            '
+                            
+                            `}
                             onClick={link.onClick}
+                            onMouseMove={handleMouseEnter}
                         >
-                            {link.icon}
-                            {link.display}
+                            <span
+                                className='
+                                text-white
+                                font-montserrat
+                                absolute
+                                text-xl
+                                flex
+                                items-center
+                                justify-center
+                                gap-5
+                                '
+                            >
+                                {link.icon}
+                                {link.display}
+                            </span>
                         </span>
                     ))
                 }
 
-
             </div>
-
-
-
-
-
 
         </div>
     )
