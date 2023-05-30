@@ -68,7 +68,7 @@ export default function Links() {
                 {
                     MyLinks.map((link, idx) => (
                         <AwesomeButton
-                            id={idx}
+                            key={idx}
                             type='secondary'
                             before={link.icon}
                             onPress={link.onClick}
