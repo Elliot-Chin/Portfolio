@@ -50,9 +50,10 @@ export default function ExperienceCard({ duration, position, location, skills, d
                         flex-col
                         rounded-40
                         p-5
-                        bg-white
-                        border-4
-                        border-green-500
+                        bg-gray-200
+
+                        dark:bg-gray-800
+                        dark:text-white
                     '
                     >
 
@@ -121,6 +122,7 @@ export default function ExperienceCard({ duration, position, location, skills, d
                                         key={i}
                                         className='
                                     glass-effect
+                                    glass-shadow
                                     rounded-40
                                     px-2
                                     py-1
@@ -165,11 +167,12 @@ export default function ExperienceCard({ duration, position, location, skills, d
                         w-full
                         rounded-40
                         p-5
-                        bg-white
-                        border-4
-                        border-red-400
+                        bg-gray-200
                         flex
                         flex-col
+
+                        dark:bg-gray-800
+                        dark:text-white
                     '
                     >
                         <h1

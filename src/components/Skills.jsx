@@ -3,7 +3,7 @@ import MySkills from "../../public/data/MySkills"
 import SectionTitle from "./SubComponents/SectionTitle"
 import SectionDivider from "./SubComponents/SectionDivider"
 
-export default function Skills() {
+export default function Skills({dark}) {
 
     // UseStates -----------------------------------------------------------------
 
@@ -22,7 +22,7 @@ export default function Skills() {
 
     const BTM_DIVIDER = (
         <SectionDivider
-            color={'white'}
+            color={dark? `rgb(55 65 81)` :'white'}
         />
     )
 
@@ -39,6 +39,8 @@ export default function Skills() {
             bg-[#3399ff]
             pb-20
             pt-5
+
+            dark:bg-blue-800
             '
         >
             {TITLE}

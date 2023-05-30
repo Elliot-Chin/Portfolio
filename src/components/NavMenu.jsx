@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 
 
-export default function NavMenu({ selectedID, shown, setShown }) {
+export default function NavMenu({ selectedID, shown, setShown, dark }) {
 
     // UseStates -----------------------------------------------------------------
     const spanRefs = useRef([])
@@ -60,7 +60,7 @@ export default function NavMenu({ selectedID, shown, setShown }) {
             <Hamburger
                 toggle={handleClick}
                 toggled={shown}
-                color={shown ? 'red' : selectedID == 'Experience' ? 'black' : 'white'}
+                color={shown ? 'red' : selectedID == 'Experience' && !dark ? 'black' : 'white'}
             />
         </div>
     )
@@ -145,6 +145,8 @@ export default function NavMenu({ selectedID, shown, setShown }) {
                         hover:text-red-600
 
                         md:text-3xl
+
+                        dark:text-white
                         `}
                     >
                         {id}
@@ -179,6 +181,7 @@ export default function NavMenu({ selectedID, shown, setShown }) {
                         md:w-1/2
 
                         lg:w-1/3
+
                     `}
             >
 

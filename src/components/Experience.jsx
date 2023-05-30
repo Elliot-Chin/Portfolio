@@ -5,7 +5,7 @@ import ExperienceCard from './ExperienceCard'
 import SectionDivider from "./SubComponents/SectionDivider"
 
 
-export default function Experience() {
+export default function Experience({ dark }) {
 
     // UseStates -----------------------------------------------------------------
 
@@ -21,7 +21,7 @@ export default function Experience() {
             title={"Experience"}
             styles={{
                 top: '20px',
-                color: 'rgb(31,41,55)',
+                color: dark ? `white` : 'rgb(31,41,55)',
             }}
         />
     )
@@ -46,6 +46,8 @@ export default function Experience() {
             min-h-screen
             bg-white
             pb-28
+
+            dark:bg-gray-700
             '
         >
 

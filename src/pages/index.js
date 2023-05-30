@@ -15,6 +15,7 @@ export default function Home() {
   const [scrolled, setScrolled] = useState(true)
   const [shown, setShown] = useState(false)
   const [visibleSectionID, setVisibleSectionID] = useState('Home')
+  const [dark, setDark] = useState(false)
 
   // Variables -----------------------------------------------------------------
 
@@ -42,7 +43,6 @@ export default function Home() {
       window.removeEventListener('scroll', handleScroll);
     }
   }, [])
-
   // Components ----------------------------------------------------------------
 
   const HEADER = (
@@ -51,37 +51,43 @@ export default function Home() {
       setScrolled={setScrolled}
       canScroll={canScroll}
       scrolled={scrolled}
+      dark={dark}
     />
   )
 
   const ABOUT_ME = (
     <AboutMe
+      dark={dark}
     />
   )
 
   const SKILLS = (
     <Skills
+      dark={dark}
     />
   )
 
   const EXPERIENCE = (
     <Experience
+      dark={dark}
     />
   )
 
   const PROJECT = (
     <Projects
+      dark={dark}
     />
   )
 
   const CONTACTME = (
     <ContactMe
+      dark={dark}
     />
   )
 
   const LOGO = (
     <MyLogo
-    visible={shown}
+      visible={shown}
     />
   )
 
@@ -90,6 +96,7 @@ export default function Home() {
       shown={shown}
       setShown={setShown}
       selectedID={visibleSectionID}
+      dark={dark}
     />
   )
 
@@ -99,7 +106,7 @@ export default function Home() {
   // Return --------------------------------------------------------------------
 
   return (
-    <div>
+    <div className={`${dark ? 'dark' : ''}`}>
       <main>
 
         {LOGO}

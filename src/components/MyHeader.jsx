@@ -3,7 +3,7 @@ import { sleep } from '@/utils/myUtils'
 import ScrollIcon from './SubComponents/ScrollIcon'
 import SectionDivider from './SubComponents/SectionDivider'
 
-export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolled }) {
+export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolled, dark }) {
 
     // UseStates ----------------------------------------------------------------
     const [header_text, setHeaderText] = useState(``)
@@ -96,7 +96,6 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
             mt-80
 
             md:text-7xl
-            md:text-gray-800
 
             lg:text-9xl
             `}>
@@ -114,7 +113,6 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
                 text-center
 
                 md:text-2xl
-                md:text-gray-800
 
                 lg:text-3xl
                 `
@@ -136,7 +134,7 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
     const BTM_DIVIDER = (
 
         <SectionDivider
-            color={'rgb(251,146,60 )'}
+            color={dark ? 'rgb(124 45 18)' : 'rgb(251 146 60)' }
         />
 
     )
@@ -154,10 +152,8 @@ export default function MyHeader({ setCanScroll, canScroll, scrolled, setScrolle
             h-[70rem]
             flex
             flex-col
-            bg-cover
-            bg-no-repeat
-            bg-[url("/images/headerBG.png")]
             bg-blend-soft-light
+            bg-gray-800
             '>
             {TITLE}
             {SUBTITLE}

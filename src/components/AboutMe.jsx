@@ -5,7 +5,7 @@ import SectionTitle from "./SubComponents/SectionTitle"
 import SectionDivider from "./SubComponents/SectionDivider"
 
 
-export default function AboutMe() {
+export default function AboutMe({ dark }) {
 
     const [height, setHeight] = useState('700px')
 
@@ -83,7 +83,7 @@ export default function AboutMe() {
 
     const BTM_DIVIDER = (
         <SectionDivider
-            color={'#3399ff'} />
+            color={dark ? 'rgb(30 64 175)' : '#3399ff'} />
     )
 
     // Return --------------------------------------------------------------------
@@ -103,6 +103,8 @@ export default function AboutMe() {
                 flex-col
                 justify-center
                 bg-orange-400
+
+                dark:bg-orange-900
                 '>
 
                 {TITLE}
@@ -113,13 +115,13 @@ export default function AboutMe() {
                     flex-col
                     flex-wrap
                     glass-effect
-                    orange-shadow
                     w-10/12
                     mx-auto
                     mb-32
                     pb-5
                     -mt-5
                     rounded-40
+
 
                     md:flex-col
                     md:w-10/12

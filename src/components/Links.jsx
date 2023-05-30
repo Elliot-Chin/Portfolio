@@ -1,24 +1,17 @@
 import { useState } from "react"
 import MyLinks from "../../public/data/MyLinks"
+import { AwesomeButton } from "react-awesome-button"
 
 
 export default function Links() {
 
 
     // UseStates -----------------------------------------------------------------
-    const [cName, setCName] = useState('__left')
+    const [fSize, setFontSize] = useState('50rem')
 
     // Variables -----------------------------------------------------------------
 
     // Util funcs ----------------------------------------------------------------
-    const handleMouseEnter = (event) => {
-        const { clientX } = event
-        const spanRect = event.target.getBoundingClientRect()
-        const spanCenterX = spanRect.left + spanRect.width / 2
-
-        setCName(clientX < spanCenterX ? '__left' : '__right')
-
-    }
 
     // UseEffect -----------------------------------------------------------------
 
@@ -74,49 +67,31 @@ export default function Links() {
 
                 {
                     MyLinks.map((link, idx) => (
-                        <span
-                            key={idx}
-                            className={`
-                            btn-hover
-                            relative
+                        <AwesomeButton
+                            id={idx}
+                            type='secondary'
+                            before={link.icon}
+                            onPress={link.onClick}
+                            onPressed={link.onClick}
+                            style={{
+                                '--button-secondary-color': 'rgb(59,7,100)',
+                                "--button-secondary-color-dark": "transparent",
+                                "--button-secondary-color-light": "white",
+                                '--button-secondary-color-hover': 'rgb(168,85,247)',
+                                '--button-secondary-color-active': 'rgb(168,85,247)',
+                                '--button-secondary-border': '0px solid #acc3d7',
+                                '--button-default-border-radius': '40px',
+                                '--button-raise-level': '6px',
+                                '--button-hover-pressure': '2.5',
+                                fontSize: '1.5rem',
+                                height: '80px',
+                            }}
+                            className='
                             w-2/3
-                            cursor-pointer
-                            h-16
-                            rounded-40
-                            text-xl
-                            flex
-                            items-center
-                            overflow-hidden
-                            z-10
-                            justify-center
-                            outline-none
-
-                            ${cName}
-
-                            md:text-2xl
-
-                            lg:text-3xl
-                            
-                            `}
-                            onClick={link.onClick}
-                            onMouseMove={handleMouseEnter}
+                            '
                         >
-                            <span
-                                className='
-                                text-white
-                                font-montserrat
-                                absolute
-                                text-xl
-                                flex
-                                items-center
-                                justify-center
-                                gap-5
-                                '
-                            >
-                                {link.icon}
-                                {link.display}
-                            </span>
-                        </span>
+                            {link.display}
+                        </AwesomeButton>
                     ))
                 }
 
