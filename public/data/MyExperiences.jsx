@@ -9,11 +9,11 @@ const Experiences = [
         imgAlt: 'UNB Logo',
         position: 'Software Developer',
         location: 'Department of Electrical and Computer Engineering',
-        desc: `Working solo as the only full-stack developer, I independently tackled various software development projects for the Department of Electrical and Computer Engineering at the University of New Brunswick. Regular remote and in-person team meetings with collaborators were among my responsibilities. I provided updates on my progress and addressed any issues or impediments I faced.
+        desc: `As the only full-stack developer, I independently tackled various software development projects for the Department of Electrical and Computer Engineering at the University of New Brunswick. Regular remote and in-person team meetings with collaborators were among my responsibilities. I provided updates on my progress and addressed any issues or impediments I faced.
 
-            As the primary developer, my duty was to engage stakeholders and gather their requirements for building a department-wide automated tool that could be used for academic advising and Canadian Engineering Accreditation Board (CEAB) accreditation purposes. I worked closely with stakeholders to ensure that the system met their needs. I designed and implemented flexible, maintainable solutions that could adapt to their evolving needs.
+            As the primary developer, my duty was to engage stakeholders and gather their requirements for building two department-wide automated tools that could be used for academic advising and Canadian Engineering Accreditation Board (CEAB) accreditation purposes respectively. I worked closely with stakeholders to ensure that the system met their needs. I designed and implemented flexible, maintainable solutions that could adapt to their evolving needs.
 
-            Apart from designing and implementing the tool, I also analyzed data collected for academic advising and CEAB accreditation purposes, which helped me identify potential areas for improvement and make recommendations for future development. Throughout the project, I reported to the Undergraduate Coordinator responsible for academic advising and curriculum oversight of the Electrical Engineering program to ensure the project aligned with the department's goals and objectives.`,
+            Apart from designing and implementing the tool, I also analyzed data collected which helped me identify potential areas for improvement and make recommendations for future development. Throughout the project, I reported to the Undergraduate Coordinator responsible for academic advising and curriculum oversight of the Electrical Engineering program to ensure the project aligned with the department's goals and objectives.`,
 
         buttons: ["View Employer Evaluation"],
 
