@@ -34,8 +34,10 @@ export default function ExperienceCard({ duration, position, location, skills, d
                 <div
                     className='
                    flip-content
-                   w-full
+                   w-5/6
                    h-full
+
+                   md:w-full
                     '
                 >
 

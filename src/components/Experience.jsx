@@ -43,7 +43,6 @@ export default function Experience({ dark }) {
             relative
             h-fit
             -mt-10
-            min-h-screen
             bg-white
             pb-28
 
